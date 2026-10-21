@@ -1,0 +1,20 @@
+! B3LYP def2-SVP TightSCF IRC CPCM(Water)
+
+%scf
+  MaxIter 500
+end
+%irc
+  MaxIter 80
+  Direction down
+  Monitor_Internals
+    {B 1 8}
+    {B 1 28}
+    {B 8 29}
+  end
+end
+%pal
+  nprocs 16
+end
+%maxcore 1000
+
+* xyzfile -1 1 start.xyz

@@ -1,0 +1,29 @@
+{
+  "attempt_directory": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\h11_orca_hydroxide_irc_v1\\bz\\placement_02\\irc\\attempt_001",
+  "backward_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\h11_orca_hydroxide_irc_v1\\bz\\placement_02\\irc\\attempt_001\\irc_IRC_B.xyz",
+  "connection_validation": {
+    "backward_metrics": {
+      "amide_n_transferring_h_angstrom": 2.7597699122643813,
+      "attacking_o_transferring_h_angstrom": 0.971405397607579,
+      "carbonyl_c_amide_n_angstrom": 1.6592611348293884,
+      "carbonyl_c_attacking_o_angstrom": 1.4397301762124775
+    },
+    "brackets_c_n_cleavage": true,
+    "forward_metrics": {
+      "amide_n_transferring_h_angstrom": 2.9830659381193896,
+      "attacking_o_transferring_h_angstrom": 0.9730196818491675,
+      "carbonyl_c_amide_n_angstrom": 2.4252709655917526,
+      "carbonyl_c_attacking_o_angstrom": 1.3499334737417379
+    },
+    "note": "IRC endpoint geometries bracket the C-N cleavage coordinate; endpoint minima remain those independently optimized in the NEB run.",
+    "status": "PASS"
+  },
+  "direction_status": {
+    "backward": "CONVERGED",
+    "forward": "MAX_ITERATIONS"
+  },
+  "forward_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\h11_orca_hydroxide_irc_v1\\bz\\placement_02\\irc\\attempt_001\\irc_IRC_F.xyz",
+  "output": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\h11_orca_hydroxide_irc_v1\\bz\\placement_02\\irc\\attempt_001\\irc.out",
+  "provenance": "reused_completed_orca_irc",
+  "status": "PARTIAL"
+}

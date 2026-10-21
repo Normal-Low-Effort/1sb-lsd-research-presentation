@@ -1,0 +1,21 @@
+
+────────────────────────────────────────────────────────────────────────────────────────
+                                ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄                    Build date:
+                              r █▄ ▄▄ █▄ ▄▄▀█▄ ▄▄▀█▄ ▄ ▀█                    2026-Aug-15
+                              u ██ ▄█▀██ ██ ██ ██ ██ ▄ ▀█                               
+                              n █▄▄▄▄▄█▄▄▄▄██▄▄▄▄██▄▄▄▄██                               
+
+                     Electron Density of Delocalized Bonds Analysis                     
+                        (https://aromaticity.uj.edu.pl/runeddb)                         
+────────────────────────────────────────────────────────────────────────────────────────
+
+▶ Printing summary of EDDB calculations:
+
+        Total   ED_P population:            7.82811    per atom:     1.30469
+        Total EDLB_P population:            6.25718    per atom:     1.04286
+        Total EDDB_P population:            1.57093    per atom:     0.26182
+
+    Cyclic Delocal. Index (CDI):            0.01491
+
+▶ Calculation completed on 2026-08-15. Total time: 3s.
+

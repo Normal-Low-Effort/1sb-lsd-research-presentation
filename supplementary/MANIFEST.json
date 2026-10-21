@@ -1,0 +1,399 @@
+[
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/protonation_ensemble_refinement/FINDINGS_JA.md",
+    "published_relative_path": "supplementary/protonation_ensemble_refinement/FINDINGS_JA.md",
+    "original_sha256": "c32739d29297ff8037a3effaab2f9e4c90e88bbe6985d5d0a5919550497373b2",
+    "published_sha256": "c32739d29297ff8037a3effaab2f9e4c90e88bbe6985d5d0a5919550497373b2",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/protonation_ensemble_refinement/results.json",
+    "published_relative_path": "supplementary/protonation_ensemble_refinement/results.json",
+    "original_sha256": "e1e2a4b25e02b10054ecdbdec35447d4819fe2fe4d91024f3f4f8413f19d3e15",
+    "published_sha256": "7977afa670cce6c1149e2a8fd0af0f19e6bd960f4327e6e4089a38542b07304c",
+    "content_edits": [
+      "Local workspace/user-profile prefixes replaced; relative path retained."
+    ]
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/protonation_ensemble_refinement/status.json",
+    "published_relative_path": "supplementary/protonation_ensemble_refinement/status.json",
+    "original_sha256": "b24bce03874a957813405eb1da58d8979d08d2358e7d2008218c5df3ed3b451e",
+    "published_sha256": "3ed6bcda3745fbdcb495172d91eee6f674278b06386d3150b58615ab60721c29",
+    "content_edits": [
+      "Local workspace/user-profile prefixes replaced; relative path retained."
+    ]
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/protonation_ensemble_refinement/thermochemistry_cycle.json",
+    "published_relative_path": "supplementary/protonation_ensemble_refinement/thermochemistry_cycle.json",
+    "original_sha256": "da07dbe2403be600443a8aadb5bed4012682df5082fccd767688fa1dce1def4b",
+    "published_sha256": "f9bf39ceacba3307d41271280237db38bc52894d8c001137816cbc940f9c22f8",
+    "content_edits": [
+      "Local workspace/user-profile prefixes replaced; relative path retained."
+    ]
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/protonation_ensemble_refinement/thermochemistry_status.json",
+    "published_relative_path": "supplementary/protonation_ensemble_refinement/thermochemistry_status.json",
+    "original_sha256": "a0dfde080170362506a678836f6e33b6dabf76a8b982d9a70b31ddaad2650a44",
+    "published_sha256": "a4f64e077b91e248deb1e0ff0abc4f28001b6ae19011a737808fd992fa85fa24",
+    "content_edits": [
+      "Local workspace/user-profile prefixes replaced; relative path retained."
+    ]
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/h7_h6_dft_singlepoints/results.json",
+    "published_relative_path": "supplementary/h7_h6_dft_singlepoints/results.json",
+    "original_sha256": "a99a4f254f29a2cac2c6850efe5c182b47f6db91b080fd4a23a20235a114a08c",
+    "published_sha256": "ee904cb1025732a79500a9108125b3c68465ece9ee72bcc10c0328edbcf41af1",
+    "content_edits": [
+      "Local workspace/user-profile prefixes replaced; relative path retained."
+    ]
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/h7_h6_dft_singlepoints/status.json",
+    "published_relative_path": "supplementary/h7_h6_dft_singlepoints/status.json",
+    "original_sha256": "ab226a0dd925f2bb6b1147ee6cb93bf62c95aa2213662bd6a2833bfa36a347df",
+    "published_sha256": "bdba412e5431de274f59f5c0ee377994d2fedb1f9a565b1d8988f2a8356702b7",
+    "content_edits": [
+      "Local workspace/user-profile prefixes replaced; relative path retained."
+    ]
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair001/bz_optimized/fragment_all_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair001/bz_optimized/fragment_all_frozen.log",
+    "original_sha256": "6c93ba52e4345f9d609c850da1888bba9f4ae2fa6d560c0e0cd9c844fc0c3a5f",
+    "published_sha256": "6c93ba52e4345f9d609c850da1888bba9f4ae2fa6d560c0e0cd9c844fc0c3a5f",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair001/bz_optimized/fragment_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair001/bz_optimized/fragment_pi_frozen.log",
+    "original_sha256": "2cb1d52096b351fc46f4744d79a419d87b5c74209f3eee7b9d353bd311bbb442",
+    "published_sha256": "2cb1d52096b351fc46f4744d79a419d87b5c74209f3eee7b9d353bd311bbb442",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair001/bz_optimized/fragment_pi_manual_matched.log",
+    "published_relative_path": "supplementary/eddb_logs/pair001/bz_optimized/fragment_pi_manual_matched.log",
+    "original_sha256": "8d83568ede8b1eb660733f91a8b4d11cfbe69b57a39bdffc4afc6b6f5e78ef23",
+    "published_sha256": "8d83568ede8b1eb660733f91a8b4d11cfbe69b57a39bdffc4afc6b6f5e78ef23",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair001/bz_optimized/fragment_pi_rigorous.log",
+    "published_relative_path": "supplementary/eddb_logs/pair001/bz_optimized/fragment_pi_rigorous.log",
+    "original_sha256": "e399b09536f9dc2b49868f161d2a94263d50254f1720b052b60088fb3a2f93d8",
+    "published_sha256": "e399b09536f9dc2b49868f161d2a94263d50254f1720b052b60088fb3a2f93d8",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair001/bz_optimized/pathway_amide_side_a_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair001/bz_optimized/pathway_amide_side_a_pi_frozen.log",
+    "original_sha256": "50dbd05f6a040642f4689e4d44770011a22df1d6a1746658d8f97b93a5a2ef03",
+    "published_sha256": "50dbd05f6a040642f4689e4d44770011a22df1d6a1746658d8f97b93a5a2ef03",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair001/bz_optimized/pathway_amide_side_b_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair001/bz_optimized/pathway_amide_side_b_pi_frozen.log",
+    "original_sha256": "82d21934c23d0f9f47d4bfa2855dd895b1010578e0e5331b04e9b8c0f8ba7e63",
+    "published_sha256": "82d21934c23d0f9f47d4bfa2855dd895b1010578e0e5331b04e9b8c0f8ba7e63",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair001/bz_optimized/pathway_oxygen_side_a_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair001/bz_optimized/pathway_oxygen_side_a_pi_frozen.log",
+    "original_sha256": "3cac1c1b60fd22339414d46a75b99ad8e6157140f5fa2593b120cb43b48b5cbe",
+    "published_sha256": "3cac1c1b60fd22339414d46a75b99ad8e6157140f5fa2593b120cb43b48b5cbe",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair001/bz_optimized/pathway_oxygen_side_b_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair001/bz_optimized/pathway_oxygen_side_b_pi_frozen.log",
+    "original_sha256": "8b8480512a1744d07680ddb3b7fed1889867e9ddb053d36ff040c20337d729e2",
+    "published_sha256": "8b8480512a1744d07680ddb3b7fed1889867e9ddb053d36ff040c20337d729e2",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair001/sb_optimized/fragment_all_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair001/sb_optimized/fragment_all_frozen.log",
+    "original_sha256": "0bc1499391d59b89d168ce04ea57c1d99dd156a9e3848e249b2d2e3687051c2e",
+    "published_sha256": "0bc1499391d59b89d168ce04ea57c1d99dd156a9e3848e249b2d2e3687051c2e",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair001/sb_optimized/fragment_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair001/sb_optimized/fragment_pi_frozen.log",
+    "original_sha256": "fc4ac225d54564a00be8bd0f747160dbfe6553881f5435f37a218ceb781edae3",
+    "published_sha256": "fc4ac225d54564a00be8bd0f747160dbfe6553881f5435f37a218ceb781edae3",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair001/sb_optimized/fragment_pi_manual_matched.log",
+    "published_relative_path": "supplementary/eddb_logs/pair001/sb_optimized/fragment_pi_manual_matched.log",
+    "original_sha256": "0529b5a1c605b324253ab16aebe7acfacb9a443695711f2633b63e2d5894c921",
+    "published_sha256": "0529b5a1c605b324253ab16aebe7acfacb9a443695711f2633b63e2d5894c921",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair001/sb_optimized/fragment_pi_rigorous.log",
+    "published_relative_path": "supplementary/eddb_logs/pair001/sb_optimized/fragment_pi_rigorous.log",
+    "original_sha256": "57e55c2dffd1e5cf69ce31111b17e61350017564f848d1373581d56ad82bacfd",
+    "published_sha256": "57e55c2dffd1e5cf69ce31111b17e61350017564f848d1373581d56ad82bacfd",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair001/sb_optimized/pathway_amide_side_a_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair001/sb_optimized/pathway_amide_side_a_pi_frozen.log",
+    "original_sha256": "76522c7538a75f8b22072622bd84d6f502109b7426d84e844ff3671bf31a3c8c",
+    "published_sha256": "76522c7538a75f8b22072622bd84d6f502109b7426d84e844ff3671bf31a3c8c",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair001/sb_optimized/pathway_amide_side_b_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair001/sb_optimized/pathway_amide_side_b_pi_frozen.log",
+    "original_sha256": "8cddb75ad6d959451e350eb53f1dadcb984353c7481a1d0428a156f318703dce",
+    "published_sha256": "8cddb75ad6d959451e350eb53f1dadcb984353c7481a1d0428a156f318703dce",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair001/sb_optimized/pathway_oxygen_side_a_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair001/sb_optimized/pathway_oxygen_side_a_pi_frozen.log",
+    "original_sha256": "c569e548eee643e250285133d0dcd7c4e045bc4ce78fc75bcc2becb254d0907c",
+    "published_sha256": "c569e548eee643e250285133d0dcd7c4e045bc4ce78fc75bcc2becb254d0907c",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair001/sb_optimized/pathway_oxygen_side_b_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair001/sb_optimized/pathway_oxygen_side_b_pi_frozen.log",
+    "original_sha256": "362f0c33d0ebe2a1e3a8a505d03f2bb33a11acce24e008b072e2dd093e5702a3",
+    "published_sha256": "362f0c33d0ebe2a1e3a8a505d03f2bb33a11acce24e008b072e2dd093e5702a3",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair001/sb_tms_to_h_fixed/fragment_all_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair001/sb_tms_to_h_fixed/fragment_all_frozen.log",
+    "original_sha256": "3a566c743afedcdcb06a068a1ceb937b22ee3456c58363d0b0074248d7fcb4f4",
+    "published_sha256": "3a566c743afedcdcb06a068a1ceb937b22ee3456c58363d0b0074248d7fcb4f4",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair001/sb_tms_to_h_fixed/fragment_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair001/sb_tms_to_h_fixed/fragment_pi_frozen.log",
+    "original_sha256": "d92e1c2081358cccb61531198a8ee77c4fc1631affdeed84ed9d2f51b69e01e4",
+    "published_sha256": "d92e1c2081358cccb61531198a8ee77c4fc1631affdeed84ed9d2f51b69e01e4",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair001/sb_tms_to_h_fixed/fragment_pi_manual_matched.log",
+    "published_relative_path": "supplementary/eddb_logs/pair001/sb_tms_to_h_fixed/fragment_pi_manual_matched.log",
+    "original_sha256": "002248c429e3c42f23a3117e1dd4f7c7864a318598aeca1f6fd2048064975e5f",
+    "published_sha256": "002248c429e3c42f23a3117e1dd4f7c7864a318598aeca1f6fd2048064975e5f",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair001/sb_tms_to_h_fixed/fragment_pi_rigorous.log",
+    "published_relative_path": "supplementary/eddb_logs/pair001/sb_tms_to_h_fixed/fragment_pi_rigorous.log",
+    "original_sha256": "b8e77ba05320c9d30c1c43f5078722dc33ae7b4a8733ef821e633bfbea0d5b08",
+    "published_sha256": "b8e77ba05320c9d30c1c43f5078722dc33ae7b4a8733ef821e633bfbea0d5b08",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair001/sb_tms_to_h_fixed/pathway_amide_side_a_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair001/sb_tms_to_h_fixed/pathway_amide_side_a_pi_frozen.log",
+    "original_sha256": "fd14c3406eedfcde0281973c204f70f6c08896b3685a9f40927bf9660030a22c",
+    "published_sha256": "fd14c3406eedfcde0281973c204f70f6c08896b3685a9f40927bf9660030a22c",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair001/sb_tms_to_h_fixed/pathway_amide_side_b_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair001/sb_tms_to_h_fixed/pathway_amide_side_b_pi_frozen.log",
+    "original_sha256": "d33bb24173ae5827d57bacd4a70f07db1d9ecd4e5d368df169a9a046d9b8382b",
+    "published_sha256": "d33bb24173ae5827d57bacd4a70f07db1d9ecd4e5d368df169a9a046d9b8382b",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair001/sb_tms_to_h_fixed/pathway_oxygen_side_a_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair001/sb_tms_to_h_fixed/pathway_oxygen_side_a_pi_frozen.log",
+    "original_sha256": "34d218597fb6c128d17d8b1abaa6f78fe5f1329f93fe534d6a9942d63cd807d6",
+    "published_sha256": "34d218597fb6c128d17d8b1abaa6f78fe5f1329f93fe534d6a9942d63cd807d6",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair001/sb_tms_to_h_fixed/pathway_oxygen_side_b_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair001/sb_tms_to_h_fixed/pathway_oxygen_side_b_pi_frozen.log",
+    "original_sha256": "97e2bb2acd0b6c65ff85afe6d29287b04decfc05129f84530a30e59b634ffb3d",
+    "published_sha256": "97e2bb2acd0b6c65ff85afe6d29287b04decfc05129f84530a30e59b634ffb3d",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair002/bz_optimized/fragment_all_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair002/bz_optimized/fragment_all_frozen.log",
+    "original_sha256": "8797f9a693a4dceb360a387dcd2192dd6a0e66fb4403b445df0cc8a3e8add932",
+    "published_sha256": "8797f9a693a4dceb360a387dcd2192dd6a0e66fb4403b445df0cc8a3e8add932",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair002/bz_optimized/fragment_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair002/bz_optimized/fragment_pi_frozen.log",
+    "original_sha256": "9ebe8aa7aa9baa6f7c56c9a6e051c0f7f98d4c76c362a74039011de509045666",
+    "published_sha256": "9ebe8aa7aa9baa6f7c56c9a6e051c0f7f98d4c76c362a74039011de509045666",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair002/bz_optimized/fragment_pi_manual_matched.log",
+    "published_relative_path": "supplementary/eddb_logs/pair002/bz_optimized/fragment_pi_manual_matched.log",
+    "original_sha256": "db16895afcf6945960a56d2a20c1513710267be1704cbd2d77fb92f47d36cdac",
+    "published_sha256": "db16895afcf6945960a56d2a20c1513710267be1704cbd2d77fb92f47d36cdac",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair002/bz_optimized/fragment_pi_rigorous.log",
+    "published_relative_path": "supplementary/eddb_logs/pair002/bz_optimized/fragment_pi_rigorous.log",
+    "original_sha256": "8fcc7d4aa8e8f9b848e4a26c42749b8c2c73cf974b90b25a37d277fc56e535bf",
+    "published_sha256": "8fcc7d4aa8e8f9b848e4a26c42749b8c2c73cf974b90b25a37d277fc56e535bf",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair002/bz_optimized/pathway_amide_side_a_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair002/bz_optimized/pathway_amide_side_a_pi_frozen.log",
+    "original_sha256": "18f12549cae4be7743473e9b0da87303d53cf035f9f3dfe7036ebf4067179215",
+    "published_sha256": "18f12549cae4be7743473e9b0da87303d53cf035f9f3dfe7036ebf4067179215",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair002/bz_optimized/pathway_amide_side_b_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair002/bz_optimized/pathway_amide_side_b_pi_frozen.log",
+    "original_sha256": "768007430e09e29606789ef8abb6a8102f4a9321c4feaad073b4df30b55bd57c",
+    "published_sha256": "768007430e09e29606789ef8abb6a8102f4a9321c4feaad073b4df30b55bd57c",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair002/bz_optimized/pathway_oxygen_side_a_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair002/bz_optimized/pathway_oxygen_side_a_pi_frozen.log",
+    "original_sha256": "eb163414fd3e7076b91ca45845a9090aac768c377fc8aee1e39d4a8211d06395",
+    "published_sha256": "eb163414fd3e7076b91ca45845a9090aac768c377fc8aee1e39d4a8211d06395",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair002/bz_optimized/pathway_oxygen_side_b_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair002/bz_optimized/pathway_oxygen_side_b_pi_frozen.log",
+    "original_sha256": "a8370e11acde76924b819eeb4de8234d0b216b1581460c0ef2994e5a993fe488",
+    "published_sha256": "a8370e11acde76924b819eeb4de8234d0b216b1581460c0ef2994e5a993fe488",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair002/sb_optimized/fragment_all_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair002/sb_optimized/fragment_all_frozen.log",
+    "original_sha256": "800443c7b117fde320f44dec32a1e1b1097e6fa0d6c926a9bb34473619711a73",
+    "published_sha256": "800443c7b117fde320f44dec32a1e1b1097e6fa0d6c926a9bb34473619711a73",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair002/sb_optimized/fragment_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair002/sb_optimized/fragment_pi_frozen.log",
+    "original_sha256": "1327af4d9b43608e33724a2b1ab109e7e7b52bb566b7d619ae481b736815026e",
+    "published_sha256": "1327af4d9b43608e33724a2b1ab109e7e7b52bb566b7d619ae481b736815026e",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair002/sb_optimized/fragment_pi_manual_matched.log",
+    "published_relative_path": "supplementary/eddb_logs/pair002/sb_optimized/fragment_pi_manual_matched.log",
+    "original_sha256": "a2964aaa68764d990f2764e5744b59fa4f75c02b1737ab3e391e9e719ad53061",
+    "published_sha256": "a2964aaa68764d990f2764e5744b59fa4f75c02b1737ab3e391e9e719ad53061",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair002/sb_optimized/fragment_pi_rigorous.log",
+    "published_relative_path": "supplementary/eddb_logs/pair002/sb_optimized/fragment_pi_rigorous.log",
+    "original_sha256": "ee7e34a0e27eefdf0ce8b526278a56720e9b75a7c00d23134258ea19d2505421",
+    "published_sha256": "ee7e34a0e27eefdf0ce8b526278a56720e9b75a7c00d23134258ea19d2505421",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair002/sb_optimized/pathway_amide_side_a_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair002/sb_optimized/pathway_amide_side_a_pi_frozen.log",
+    "original_sha256": "41872d948c5939fd00ca3caab0a49d63b28ed5f8a68ae44534a9a116468e4baf",
+    "published_sha256": "41872d948c5939fd00ca3caab0a49d63b28ed5f8a68ae44534a9a116468e4baf",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair002/sb_optimized/pathway_amide_side_b_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair002/sb_optimized/pathway_amide_side_b_pi_frozen.log",
+    "original_sha256": "a506b5f7689060202364dd57a73628380919732d495353cf86cd1ffbf4819fb2",
+    "published_sha256": "a506b5f7689060202364dd57a73628380919732d495353cf86cd1ffbf4819fb2",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair002/sb_optimized/pathway_oxygen_side_a_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair002/sb_optimized/pathway_oxygen_side_a_pi_frozen.log",
+    "original_sha256": "0ff7f31e37dfadcf37a402f29d03b2123ea5270935c36d3be69eaddc04abd000",
+    "published_sha256": "0ff7f31e37dfadcf37a402f29d03b2123ea5270935c36d3be69eaddc04abd000",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair002/sb_optimized/pathway_oxygen_side_b_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair002/sb_optimized/pathway_oxygen_side_b_pi_frozen.log",
+    "original_sha256": "09959e0e6cf13b9eb6771721558ddb26d9d95ab91326ed353bba604f50024c20",
+    "published_sha256": "09959e0e6cf13b9eb6771721558ddb26d9d95ab91326ed353bba604f50024c20",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair002/sb_tms_to_h_fixed/fragment_all_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair002/sb_tms_to_h_fixed/fragment_all_frozen.log",
+    "original_sha256": "c6520478b719279945d05ee6975eba60f14e5da00328911707640ff15ee7df3c",
+    "published_sha256": "c6520478b719279945d05ee6975eba60f14e5da00328911707640ff15ee7df3c",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair002/sb_tms_to_h_fixed/fragment_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair002/sb_tms_to_h_fixed/fragment_pi_frozen.log",
+    "original_sha256": "8fc0c31ff5ebdd7316612b3cc59bc7154c7f13aecfeaa69ad61cb3badaa5b7df",
+    "published_sha256": "8fc0c31ff5ebdd7316612b3cc59bc7154c7f13aecfeaa69ad61cb3badaa5b7df",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair002/sb_tms_to_h_fixed/fragment_pi_manual_matched.log",
+    "published_relative_path": "supplementary/eddb_logs/pair002/sb_tms_to_h_fixed/fragment_pi_manual_matched.log",
+    "original_sha256": "58a665c4834cfe569f29257b4f8a82fe7965526816a65069df948ad6c82f2dd8",
+    "published_sha256": "58a665c4834cfe569f29257b4f8a82fe7965526816a65069df948ad6c82f2dd8",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair002/sb_tms_to_h_fixed/fragment_pi_rigorous.log",
+    "published_relative_path": "supplementary/eddb_logs/pair002/sb_tms_to_h_fixed/fragment_pi_rigorous.log",
+    "original_sha256": "a431ec6bec8042a4d77560bfa437d096835d6a550e406d77ae2e57715122a714",
+    "published_sha256": "a431ec6bec8042a4d77560bfa437d096835d6a550e406d77ae2e57715122a714",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair002/sb_tms_to_h_fixed/pathway_amide_side_a_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair002/sb_tms_to_h_fixed/pathway_amide_side_a_pi_frozen.log",
+    "original_sha256": "d471acc5a38586696bf95f2ff4724d94748aa5d044d000a7013ad39513180c10",
+    "published_sha256": "d471acc5a38586696bf95f2ff4724d94748aa5d044d000a7013ad39513180c10",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair002/sb_tms_to_h_fixed/pathway_amide_side_b_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair002/sb_tms_to_h_fixed/pathway_amide_side_b_pi_frozen.log",
+    "original_sha256": "a79cb22cf3f89519da6103bb7137a33f1a4c530c5a15e4c297f1a42063a6607d",
+    "published_sha256": "a79cb22cf3f89519da6103bb7137a33f1a4c530c5a15e4c297f1a42063a6607d",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair002/sb_tms_to_h_fixed/pathway_oxygen_side_a_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair002/sb_tms_to_h_fixed/pathway_oxygen_side_a_pi_frozen.log",
+    "original_sha256": "94ee003eb8e970f592318fe9d444906cd2feb62feb496f9f32c925f05cdce204",
+    "published_sha256": "94ee003eb8e970f592318fe9d444906cd2feb62feb496f9f32c925f05cdce204",
+    "content_edits": []
+  },
+  {
+    "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/pair002/sb_tms_to_h_fixed/pathway_oxygen_side_b_pi_frozen.log",
+    "published_relative_path": "supplementary/eddb_logs/pair002/sb_tms_to_h_fixed/pathway_oxygen_side_b_pi_frozen.log",
+    "original_sha256": "c83044204fffce1fc52464d2d9656f14c14a28c7d968ac33f72c965eace4f2a3",
+    "published_sha256": "c83044204fffce1fc52464d2d9656f14c14a28c7d968ac33f72c965eace4f2a3",
+    "content_edits": []
+  }
+]

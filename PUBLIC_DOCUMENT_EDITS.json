@@ -1,0 +1,16 @@
+{
+  "reviewed_on": "2026-10-22",
+  "edits": [
+    {
+      "path": "research_results/context/METABOLIC_INFERENCE_LIMITS_JA.md",
+      "historical_snapshot_sha256": "a0368fc026297e0fcd3498041159849d7e87dc63679526d230fafe77dca50197",
+      "published_sha256": "1e47fcf3c74a4fac3fc16f1e70a9e2e02dbd66f01d858352b3fa35a18fa67fae",
+      "changes": [
+        "Added a dated notice identifying this as a historical report, with a link to later H11 work.",
+        "Reworded intermediate claims as unestablished rather than chemically excluded.",
+        "Bound negative literature claims to the sources reviewed.",
+        "Preserved all numerical calculation results."
+      ]
+    }
+  ]
+}

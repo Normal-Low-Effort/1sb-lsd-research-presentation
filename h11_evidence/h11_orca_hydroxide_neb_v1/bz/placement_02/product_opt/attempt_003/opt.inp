@@ -1,0 +1,14 @@
+! B3LYP def2-SVP TightSCF COpt CPCM(Water)
+
+%scf
+  MaxIter 500
+end
+%geom
+  MaxIter 300
+end
+%pal
+  nprocs 16
+end
+%maxcore 1000
+
+* xyzfile -1 1 initial.xyz

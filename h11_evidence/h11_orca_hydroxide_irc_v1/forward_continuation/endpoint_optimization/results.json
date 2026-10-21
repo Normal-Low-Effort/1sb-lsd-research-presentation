@@ -1,0 +1,24 @@
+{
+  "chemical_state": "cleaved_proton_not_transferred",
+  "optimization": {
+    "attempt_directory": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\h11_orca_hydroxide_irc_v1\\forward_continuation\\endpoint_optimization\\bz\\placement_02\\opt\\attempt_001",
+    "convergence": "normal",
+    "coordinate_system": "cartesian",
+    "electronic_energy_hartree": -783.139707312993,
+    "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\h11_orca_hydroxide_irc_v1\\forward_continuation\\endpoint_optimization\\bz\\placement_02\\opt\\attempt_001\\opt.xyz",
+    "orca_version": "6.1.1",
+    "output": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\h11_orca_hydroxide_irc_v1\\forward_continuation\\endpoint_optimization\\bz\\placement_02\\opt\\attempt_001\\opt.out",
+    "provenance": "computed_this_run",
+    "restart_source": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\h11_orca_hydroxide_irc_v1\\forward_continuation\\bz\\placement_02\\downhill\\attempt_001\\continue_IRC_D.xyz",
+    "restart_source_provenance": "xtb_endpoint",
+    "status": "SUCCESS"
+  },
+  "optimized_metrics": {
+    "amide_n_transferring_h_angstrom": 3.7103872729161984,
+    "attacking_o_transferring_h_angstrom": 0.9745325640576715,
+    "carbonyl_c_amide_n_angstrom": 3.3730159171407874,
+    "carbonyl_c_attacking_o_angstrom": 1.3411499231247423
+  },
+  "source_irc_endpoint": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\h11_orca_hydroxide_irc_v1\\forward_continuation\\bz\\placement_02\\downhill\\attempt_001\\continue_IRC_D.xyz",
+  "status": "SUCCESS"
+}

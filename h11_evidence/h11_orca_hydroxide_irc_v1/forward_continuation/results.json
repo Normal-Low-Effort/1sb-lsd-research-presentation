@@ -1,0 +1,14 @@
+{
+  "attempt_directory": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\h11_orca_hydroxide_irc_v1\\forward_continuation\\bz\\placement_02\\downhill\\attempt_001",
+  "convergence": "CONVERGED",
+  "endpoint_metrics": {
+    "amide_n_transferring_h_angstrom": 3.0740277677950365,
+    "attacking_o_transferring_h_angstrom": 0.9733310050039249,
+    "carbonyl_c_amide_n_angstrom": 2.5955906859872346,
+    "carbonyl_c_attacking_o_angstrom": 1.3446799232974886
+  },
+  "endpoint_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\h11_orca_hydroxide_irc_v1\\forward_continuation\\bz\\placement_02\\downhill\\attempt_001\\continue_IRC_D.xyz",
+  "output": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\h11_orca_hydroxide_irc_v1\\forward_continuation\\bz\\placement_02\\downhill\\attempt_001\\continue.out",
+  "provenance": "computed_this_run",
+  "status": "SUCCESS"
+}

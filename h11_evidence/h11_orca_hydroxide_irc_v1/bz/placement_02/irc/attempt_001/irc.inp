@@ -1,0 +1,23 @@
+! B3LYP def2-SVP TightSCF IRC CPCM(Water)
+
+%scf
+  MaxIter 500
+end
+%irc
+  MaxIter 40
+  Direction both
+  InitHess read
+  Hess_Filename "ts.hess"
+  hessMode 0
+  Monitor_Internals
+    {B 1 8}
+    {B 1 28}
+    {B 8 29}
+  end
+end
+%pal
+  nprocs 16
+end
+%maxcore 1000
+
+* xyzfile -1 1 ts.xyz

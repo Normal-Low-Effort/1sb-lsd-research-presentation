@@ -1,0 +1,55 @@
+{
+  "conditions": {
+    "basis": "def2-SVP",
+    "charge": -1,
+    "functional": "B3LYP",
+    "initial_hessian": "exact hybrid Hessian on five active atoms",
+    "maxcore_mb_per_process": 1000,
+    "multiplicity": 1,
+    "nprocs": 16,
+    "software": "ORCA 6.1.1",
+    "solvent": "CPCM(Water)"
+  },
+  "generated_at_utc": "2026-08-24T22:29:16.631944Z",
+  "limitations": [
+    "The model omits the full ergoline framework and explicit solvent relay.",
+    "A valid TS requires exactly one relevant imaginary mode and IRC endpoint verification.",
+    "No pH, standard-state, diffusion, or reactant-population correction is included."
+  ],
+  "records": [
+    {
+      "active_atoms_zero_based": [
+        0,
+        1,
+        8,
+        28,
+        29
+      ],
+      "charge": -1,
+      "frequency": {
+        "reason": "frequency not requested or TS did not converge",
+        "status": "SKIPPED"
+      },
+      "model": "bz",
+      "model_smiles": "O=C(c1ccccc1)n1ccc2ccccc21",
+      "multiplicity": 1,
+      "placement": 2,
+      "source_xtb_peak_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\h11_hydroxide_stepwise_matrix_v1\\bz\\hydroxide_assisted\\placement_02\\addition_scan\\collapse_scan\\collapse_peak.xyz",
+      "status": "FAILED",
+      "transition_state": {
+        "attempt_directory": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\h11_orca_hydroxide_ts_v1\\bz\\placement_02\\ts\\attempt_002",
+        "output": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\h11_orca_hydroxide_ts_v1\\bz\\placement_02\\ts\\attempt_002\\ts.out",
+        "returncode": 2,
+        "status": "FAILED"
+      }
+    }
+  ],
+  "schema_version": 1,
+  "scope": "small-model hydroxide-collapse TS verification; not a physiological rate",
+  "source_results": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\h11_hydroxide_stepwise_matrix_v1\\results.json",
+  "summary": {
+    "failed": 1,
+    "successful": 0,
+    "total": 1
+  }
+}

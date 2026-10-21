@@ -1,0 +1,16 @@
+{
+  "computed_hessians": 5,
+  "computed_xtb_optimizations": 0,
+  "current_job": null,
+  "failures": [],
+  "findings": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\protonation_ensemble_refinement\\FINDINGS_JA.md",
+  "finished_at_utc": "2026-08-23T23:48:03.530797Z",
+  "maximum_per_variant": 12,
+  "phase": "complete",
+  "pool_per_variant": 200,
+  "results": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\protonation_ensemble_refinement\\results.json",
+  "reused_hessians": 12,
+  "reused_xtb_optimizations": 37,
+  "started_at_utc": "2026-08-23T23:45:43.769865Z",
+  "status": "SUCCESS"
+}

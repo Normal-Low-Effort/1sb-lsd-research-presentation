@@ -1,0 +1,19 @@
+{
+  "completed_jobs": 32,
+  "computed_jobs": 16,
+  "current_job": null,
+  "effect_on_hypothesis": "A stable near-zero double difference in both media weakens protonation and continuum-solvation explanations; a material solvent-dependent shift would prioritize H6 explicit-solvent refinement.",
+  "estimated_wall_time_hours": "6-9 from prior property jobs; conservative overestimate",
+  "failed_jobs": 0,
+  "failures": [],
+  "finished_at_utc": "2026-08-24T07:24:49.559695Z",
+  "frequency_calculation_performed": false,
+  "geometry_optimization_performed": false,
+  "planned_jobs": 32,
+  "observed_wall_time_hours": 1.874,
+  "reason": "Test whether the near-zero H7 Bz/SB protonation double difference survives DFT and quantify the H6 gas-to-CPCM sensitivity.",
+  "results": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\h7_h6_dft_singlepoints\\results.json",
+  "reused_jobs": 16,
+  "started_at_utc": "2026-08-24T05:32:21.779162Z",
+  "status": "SUCCESS"
+}

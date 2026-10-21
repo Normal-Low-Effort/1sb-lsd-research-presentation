@@ -1,0 +1,106 @@
+
+────────────────────────────────────────────────────────────────────────────────────────
+                                ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄                    Build date:
+                              r █▄ ▄▄ █▄ ▄▄▀█▄ ▄▄▀█▄ ▄ ▀█                    2026-Aug-15
+                              u ██ ▄█▀██ ██ ██ ██ ██ ▄ ▀█                               
+                              n █▄▄▄▄▄█▄▄▄▄██▄▄▄▄██▄▄▄▄██                               
+
+                     Electron Density of Delocalized Bonds Analysis                     
+                        (https://aromaticity.uj.edu.pl/runeddb)                         
+────────────────────────────────────────────────────────────────────────────────────────
+
+▶ Loading and parsing input file...                                                   1s
+
+    Source file:                       wavefunction.json
+    File format:                       JavaScript Object Notation (JSON)
+    Number of atoms:                   73
+    Center input geometry:             No
+    Number of basis functions:         1344 (spherical)
+    Number of contracted shells:       546
+    Number of primitives:              949
+    Number of molecular orbitals:      1344
+    Effective core potential:          No
+    Charge / multiplicity:             0 / 1
+    Total electrons:                   268
+    Unrestricted:                      No
+    Reference type:                    HF / DFT
+    Electron population (Tr[D*S]):     268.00000
+
+▶ Building natural atomic orbitals (NAO, frozen-NMB two-cycle)...                     3s
+
+    NAO algorithm:                     Frozen-NMB (two-cycle construction)
+    Total number of NAOs:              1335 = 40 (Cor) + 181 (Val) + 1114 (Ryd)
+    Total electron population:         267.99906
+            - core population:         79.99959 (~29.9 %)
+         - valence population:         187.30524 (~69.9 %)
+         - rydberg population:         0.69423 (~0.3 %)
+    Target NAO representation:         Natural valence basis (NVB = Val)
+             - NVB population:         187.30524 (~69.9 %)
+    Papers to be cited (DOI):          10.1063/1.449486 (NAO)
+                                       in preparation (frozen-NMB)
+
+▶ Performing multicenter bond-orbital projections (BOP)...
+
+    Type of EDDB function:             EDDB_F (specific molecular fragment)
+    Fragment definition:               16,17,18,19,20,21,22,23,24
+    BOP algorithm:                     Standard BOP (HF/DFT 1-densities)
+    Atoms included in BOP:             9
+    Pairs included in BOP:             33
+    Bond-order threshold:              0.00100
+    Connectivity mask basis:           full NAO
+    Progress:                          
+    Number of BOP cycles:              1
+    BOP time:                          0.005s
+    Papers to be cited (DOI):          10.1016/j.cplett.2014.01.006 (BOP)
+                                       10.1016/j.comptc.2016.02.003 (EDDB)
+                                       10.1039/c7cp06114e (EDDB_F)
+
+▶ Computing natural orbitals for bond delocalization (NOBD)...                        0s
+▶ Printing analysis details:
+
+  ┌────────────────────────────────────────────────────────────────────────────────────┐
+  │                       BOND-ORDER ORBITALS (BOO) IN NVB BASIS                       │
+  └────────────────────────────────────────────────────────────────────────────────────┘
+    Index      Atom pair         Total        BOO occupations with symmetry labels
+   ─────── ─────────────────   ─────────  ─────────────────────────────────────────────
+        1     16~17     N~C     1.05105    0.83960(σ) 0.19660(π) 0.01068(π) 0.00418(σ)
+        5     16~18     N~O     0.11244    0.06025(π) 0.05138(?) 0.00082(σ)
+        8     17~18     C~O     1.64704    0.89574(σ) 0.61637(π) 0.12793(π) 0.00701(σ)
+       12     17~19     C~C     0.98976    0.90644(σ) 0.07294(π) 0.00747(π) 0.00290(σ)
+       16     18~19     O~C     0.05112    0.04624(?) 0.00398(π) 0.00088(σ)
+       19     18~24     O~C     0.02397    0.01740(π) 0.00641(σ) 0.00016(π)
+       22     19~20     C~C     1.37876    0.95234(σ) 0.40557(π) 0.01710(π) 0.00376(σ)
+       26     19~22     C~C     0.09950    0.09855(π) 0.00091(σ)
+       28     19~24     C~C     1.37773    0.95284(σ) 0.40292(π) 0.01767(π) 0.00430(σ)
+       32     20~21     C~C     1.44031    0.96327(σ) 0.45312(π) 0.01896(π) 0.00496(σ)
+       36     20~23     C~C     0.10632    0.10479(π) 0.00144(σ)
+       38     21~22     C~C     1.40644    0.95702(σ) 0.42366(π) 0.01988(π) 0.00588(σ)
+       42     21~24     C~C     0.10279    0.10141(π) 0.00131(σ)
+       44     22~23     C~C     1.40510    0.95706(σ) 0.42196(π) 0.02006(π) 0.00602(σ)
+       48     23~24     C~C     1.44049    0.96190(σ) 0.45466(π) 0.01885(π) 0.00508(σ)
+   ─────── ─────────────────   ─────────  ─────────────────────────────────────────────
+
+  ┌────────────────────────────────────────────────────────────────────────────────────┐
+  │          NATURAL POPULATION ANALYSIS IN CONDENSED-ATOMIC (NVB) RESOLUTION          │
+  └────────────────────────────────────────────────────────────────────────────────────┘
+     Atom      Charge       ED_F        α         β        EDDB_F       α         β
+   ────────   ─────────   ───────── ───────── ─────────   ═════════ ───────── ─────────
+      16 N    -0.37271     5.35308      -         -        0.22512      -         -   
+      17 C    +0.67767     3.28979      -         -        0.26150      -         -   
+      18 O    -0.59619     6.56993      -         -        0.37423      -         -   
+      19 C    -0.15527     4.13790      -         -        0.98386      -         -   
+      20 C    -0.18157     4.16658      -         -        0.87183      -         -   
+      21 C    -0.20937     4.19472      -         -        0.88909      -         -   
+      22 C    -0.41198     4.39136      -         -        0.88429      -         -   
+      23 C    -0.20877     4.19404      -         -        0.88570      -         -   
+      24 C    -0.19716     4.18294      -         -        0.87816      -         -   
+   ────────   ─────────   ───────── ───────── ─────────   ═════════ ───────── ─────────
+
+▶ Printing summary of EDDB calculations:
+
+        Total   ED_F population:           40.48034    per atom:     4.49782
+        Total EDLB_F population:           34.22657    per atom:     3.80295
+        Total EDDB_F population:            6.25377    per atom:     0.69486
+
+▶ Calculation completed on 2026-08-15. Total time: 4s.
+
