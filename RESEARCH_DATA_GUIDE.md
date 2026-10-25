@@ -1,9 +1,9 @@
-# Public data guide
+# 公開データの案内
 
-This is a selected public companion to a computational study, not a complete rerunnable archive. The main documents are in Japanese: [overview](README.md), [methods and results](METHODS_AND_RESULTS_JA.md), [references](REFERENCES.md), and [data interpretation guide](RESEARCH_DATA_GUIDEja.md).
+このリポジトリは、計算研究の発表を補うために資料を選んで公開したものです。研究全体をそのまま再実行できる完全な計算原本ではありません。[研究の概要](README.md)、[方法と結果](METHODS_AND_RESULTS_JA.md)、[参考文献](REFERENCES.md)、[データの読み方](RESEARCH_DATA_GUIDEja.md)を参照してください。
 
-`research_results/` retains a historical lightweight snapshot, mainly through 23 August 2026. `supplementary/` adds later protonation analyses and runEDDB logs. `h11_evidence/` adds selected records for the benzoyl small-model C–N cleavage pathway. Each group has a provenance manifest. Local path prefixes are replaced with placeholders; the original relative file locations are retained.
+`research_results/` は主に2026年8月23日までの解析を保存したデータです。`supplementary/` には後期のプロトン化解析とrunEDDBのログ、`h11_evidence/` にはBz小モデルのC–N切断経路について選んだ記録があります。各データ群には、複製元との対応を示す一覧が付いています。ローカルパスの接頭部分は置換記号で伏せ、元ファイルの相対位置は保持しています。
 
-The original snapshot's policy text about Git-ignored outputs describes its historical source environment. It does not describe the scope of this public package or the current complete archive. Source hashes, published hashes, and the package-wide checksum list distinguish these layers.
+過去の保存データにある「outputsはGitの対象外」という方針は、元の作業環境で当時使っていた説明です。この公開資料の範囲や、完全アーカイブの現在の設定を説明するものではありません。複製元と公開版のハッシュ、公開資料全体のチェックサム一覧で、各版を区別できます。
 
-1Bz-LSD is a non-TMS comparison compound, not an established metabolite of 1SB-LSD. The study does not establish physiological metabolic rates or a major in vivo pathway. For hypothesis 11, the Bz model's post-cleavage endpoint still lacks frequency verification, proton transfer remains unresolved, and a matched SB NEB/IRC calculation has not been performed.
+1Bz-LSDはTMSを持たない比較対照です。1SB-LSDの実証済み代謝中間体とは扱いません。本研究では、生理条件での代謝速度や生体内の主要経路は確定していません。仮説11の収録記録では、Bz小モデルの切断後終点のFreqが未実施で、プロトン移動も未解決です。同条件のSBのNEB/IRCも実施していません。これらは収録記録の時点での状態です。

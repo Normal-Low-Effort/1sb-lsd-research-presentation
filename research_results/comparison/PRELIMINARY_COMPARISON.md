@@ -1,64 +1,64 @@
-# 1Bz-LSD_RR vs 1SB-LSD_RR preliminary comparison
+# 1Bz-LSD_RRと1SB-LSD_RRの予備比較
 
-Generated from retained B3LYP/def2-SVP gas-phase structures. These are computed candidate structures, not experimental structures.
+保存済みのB3LYP/def2-SVP気相構造から作成した予備比較である。構造は計算上の候補であり、実験構造ではない。
 
-## Scope
+## 対象範囲
 
-- Bz: 9 final DFT representatives; original Freq selection 3/3 completed, 1 supplemental, 4 total available.
-- SB sensitivity set: 11 DFT representatives including one targeted follow-up; original Freq selection 3/3 completed, 0 supplemental, 6 total available.
-- SB force-field pool review: 9 common-scaffold clusters within the force-field window; 1 clusters lacked a selected DFT representative.
-- Values in the main table use one lowest-energy representative per common-scaffold cluster, then electronic-energy weighting. This is not claimed to be a complete Boltzmann ensemble or a rotor-degeneracy treatment.
-- Gibbs-weighted values in analysis.json are conditional on structures with Freq unless every final representative has Freq.
+- Bzは最終DFT代表9構造。元のFreq選択は3/3が完了し、追加1件を含めて合計4件を利用できる。
+- SBの感度解析集合は、追加検証1構造を含むDFT代表11構造。元のFreq選択は3/3が完了し、追加0件、利用可能な合計は6件である。
+- SBの力場候補集合では、力場エネルギーの範囲内に共通骨格9群がある。そのうち1群には選択済みDFT代表がない。
+- 主表では共通骨格の各群から最低電子エネルギー代表を一つずつ選び、電子エネルギーで重み付けした。完全なボルツマン配座集合や、回転による縮退を扱った結果とはしない。
+- analysis.jsonのGibbs重み付き値は、全最終代表でFreqがある場合を除き、Freqがある構造だけの条件付き集計である。
 
-## Electronically weighted descriptor comparison
+## 電子エネルギーで重み付けした指標の比較
 
-| Descriptor | 1Bz-LSD_RR | 1SB-LSD_RR | SB - Bz |
+| 指標 | 1Bz-LSD_RR | 1SB-LSD_RR | SB - Bz |
 | --- | ---: | ---: | ---: |
-| C=O length (A) | 1.21559 | 1.21568 | 0.00010 |
-| Amide C-N length (A) | 1.40226 | 1.40263 | 0.00037 |
-| Benzoyl-carbonyl torsion (deg) | 40.141 | 40.536 | 0.395 |
-| BD-cone accessible fraction | 0.1528 | 0.1528 | 0.0000 |
-| Best BD-cone clearance (A) | 0.2860 | 0.2851 | -0.0009 |
-| MBIS carbonyl-C charge | 0.65068 | 0.64697 | -0.00371 |
-| MBIS carbonyl-O charge | -0.51157 | -0.51134 | 0.00023 |
-| CHELPG carbonyl-C charge | 0.53219 | 0.52892 | -0.00327 |
-| CHELPG carbonyl-O charge | -0.48241 | -0.48465 | -0.00224 |
-| Mayer C=O bond order | 2.08854 | 2.08821 | -0.00032 |
-| Mayer C-N bond order | 1.03927 | 1.03792 | -0.00135 |
-| Dipole magnitude (D) | 5.2785 | 5.3726 | 0.0941 |
-| LUMO Loewdin population at benzoyl center | 0.46325 | 0.44171 | -0.02154 |
-| Carbonyl stretch (cm-1) | 1777.46 | 1777.01 | -0.45 |
+| C=O結合長 (A) | 1.21559 | 1.21568 | 0.00010 |
+| アミドC-N結合長 (A) | 1.40226 | 1.40263 | 0.00037 |
+| ベンゾイル–カルボニル二面角 (deg) | 40.141 | 40.536 | 0.395 |
+| BD円錐内の接近可能割合 | 0.1528 | 0.1528 | 0.0000 |
+| BD円錐内の最大余裕 (A) | 0.2860 | 0.2851 | -0.0009 |
+| カルボニルCのMBIS電荷 | 0.65068 | 0.64697 | -0.00371 |
+| カルボニルOのMBIS電荷 | -0.51157 | -0.51134 | 0.00023 |
+| カルボニルCのCHELPG電荷 | 0.53219 | 0.52892 | -0.00327 |
+| カルボニルOのCHELPG電荷 | -0.48241 | -0.48465 | -0.00224 |
+| Mayer C=O結合次数 | 2.08854 | 2.08821 | -0.00032 |
+| Mayer C-N結合次数 | 1.03927 | 1.03792 | -0.00135 |
+| 双極子モーメントの大きさ (D) | 5.2785 | 5.3726 | 0.0941 |
+| ベンゾイル中心のLUMO Loewdin電子分布 | 0.46325 | 0.44171 | -0.02154 |
+| カルボニル伸縮 (cm-1) | 1777.46 | 1777.01 | -0.45 |
 
-## Evidence supporting hypothesis 1 (steric relief from the longer aryl-Si bond)
+## 仮説1と整合する結果：長い芳香環–Si結合による立体障害の緩和
 
-- The terminal para-TMS atoms remain remote from the carbonyl center. The later five-series continuous-trajectory analysis should be used for the control-based judgment; it finds only a small total-access change and does not identify TMS-specific relief relative to tBu.
+- para-TMSの末端原子はカルボニル中心から離れている。対照を用いた判定には、後に行った5系列の連続経路解析を参照する。全体の接近空間の変化は小さく、tBuに対するTMS固有の遮蔽緩和は確認されなかった。
 
-## Evidence against hypothesis 1
+## 仮説1を支持しない結果
 
-- SB does not show an increased best clearance; the mean difference is much smaller than the conformer spread. The fixed-cone accessible fraction is also quantized and identical for every retained structure, so it is not sufficiently discriminating on its own.
-- The probe omits enzyme-pocket reorganization, water, and an actual nucleophile trajectory. Comparable static access therefore cannot be converted into a hydrolysis-rate claim.
+- SBではbest clearanceが増えておらず、平均差は配座間のばらつきよりはるかに小さい。固定円錐でのaccessible fractionも刻みのある値となり、保存した全構造で同じだった。この指標だけでは違いを十分に見分けられない。
+- この幾何学的な探査には、酵素ポケットの再配置、水、実際の求核剤の移動経路を含めていない。静的な接近空間が似ていることから、加水分解速度を結論することはできない。
 
-## Evidence supporting hypothesis 2 (electronic effect)
+## 仮説2と整合する結果：電子効果
 
-- Property-only single points provide MBIS/CHELPG charges and atom-resolved frontier populations for the low-energy subset. SB shows a coherent lower carbonyl-C MBIS charge and lower benzoyl-center LUMO population; smaller shifts in C=O length, Mayer C=O order, and carbonyl stretch point in a compatible direction.
+- 物性解析用単一点から、低エネルギー部分集合のMBIS/CHELPG電荷と、原子別のフロンティア軌道の電子分布が得られた。SBではカルボニルCのMBIS電荷とベンゾイル中心のLUMO電子分布が一貫して低い。C=O結合長、Mayer C=O結合次数、カルボニル伸縮の小さい変化も、これと矛盾しない方向だった。
 
-## Evidence against hypothesis 2
+## 仮説2を判断するうえでの限界
 
-- CHELPG, bond-length, Mayer-order, dipole, and stretch differences are small relative to conformer spread or expected model sensitivity. The property subset covers about 93% of the electronic weight, not every structure. The present calculation therefore detects an electronic-structure signal but does not establish its magnitude in solution or its kinetic consequence.
+- CHELPG、結合長、Mayer結合次数、双極子、伸縮振動の差は、配座間のばらつきや想定されるモデル依存性に対して小さい。物性解析の部分集合は電子エネルギー重みの約93%を占めるが、全構造ではない。電子構造の差は検出したものの、溶液中での大きさや反応速度への影響は確定していない。
 
-## Not decidable from the current data
+## 現在のデータで判断できないこと
 
-- Two molecules change steric and electronic factors simultaneously; causality cannot be separated without a control or reaction-energy calculation.
-- A static reactant structure does not determine hydrolysis rate or an enzymatic activation barrier.
-- Differences comparable to conformer spread or method uncertainty must be reported as not detected at this level, not as absent.
-- Re/Si face labels are intentionally not assigned by the geometric probe implementation; signed faces are reported instead.
+- 二分子間では立体要因と電子要因が同時に変わる。対照や反応エネルギーの計算がなければ、各要因の寄与は分けられない。
+- 静的な反応物構造だけでは、加水分解速度や酵素反応の活性化障壁は決まらない。
+- 配座間のばらつきや手法の不確かさと同程度の差は、「この計算条件では検出できない」と報告する。「差が存在しない」とはしない。
+- 幾何学的な探査の実装では、Re/Si面の名称を割り当てていない。代わりに符号で区別した面を報告する。
 
-## Method limitations
+## 手法の限界
 
-- B3LYP/def2-SVP, gas phase, no explicit dispersion correction and neutral singlet only.
-- Common-scaffold RMSD uses fixed input atom order. It does not permute symmetric atoms; the heavy branch outside the benzoyl para carbon is excluded to prevent substituent rotation from defining scaffold clusters.
-- Low-frequency modes make sub-kJ/mol Gibbs rankings sensitive to the thermochemistry treatment.
+- B3LYP/def2-SVP、気相、明示的な分散補正なし、中性一重項だけを対象とする。
+- 共通骨格RMSDでは入力原子の順序を固定し、対称原子を入れ替えない。置換基の回転だけで骨格を別群にしないため、ベンゾイルのpara炭素より外側の重原子枝を除いている。
+- 低振動数モードがあるため、1 kJ/mol未満のGibbs順位は熱化学量の扱いに影響される。
 
-## Highest-value next calculation
+## 次の計算の優先順位
 
-No further long calculation is required for this preliminary comparison. The continuous steric trajectory and H/Me/iPr/tBu/TMS control analysis is now available separately in para_substituent_series_analysis. Pool 46 Opt remains optional if closing the residual SB search asymmetry becomes more important than model validation; reaction TS is not justified by the present static-access differences alone.
+この予備比較のために、さらに長時間の計算を行う必要はない。連続的な立体経路とH/Me/iPr/tBu/TMSの対照解析は、para_substituent_series_analysisに別途ある。モデルの検証より、SB側に残る探索範囲の不足を埋めることを優先する場合に限り、候補46のOptを検討する。現在の小さな静的アクセス差だけでは、反応TSの探索に進む根拠にはならない。

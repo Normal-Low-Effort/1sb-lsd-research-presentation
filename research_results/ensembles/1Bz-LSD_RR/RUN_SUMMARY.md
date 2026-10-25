@@ -1,55 +1,53 @@
-# 1Bz-LSD_RR Ensemble Night Run
+# 1Bz-LSD_RR 配座集合の計算記録
 
-## Calculation status
+## 計算の状態
 
-SUCCESS
+SUCCESS（処理成功）
 
-## Summary
-
-```text
-ETKDG candidates:       200
-MMFF/UFF valid:         200
-Energy-filtered:        42
-All-heavy RMSD clusters:        9
-DFT candidates:         9
-DFT completed:          9
-Unique DFT structures:  9
-Freq selected this run: 3
-Freq completed for selection: 3
-Freq available total:   4
-Freq new supplemental:  1
-Freq preexisting local:  3
-Freq reused external:    0
-Freq preexisting total:  3
-```
-
-## Lowest-energy structure found
+## 集計
 
 ```text
-Conformer:       conf001
-Energy:          -1359.238243112178 Eh
-Relative Delta E:    0.000 kJ/mol
-Gibbs:           -1358.78273757
-Relative Delta G:0.0
-Imaginary modes: 0
+ETKDGで生成した候補:       200
+MMFF/UFFで有効だった候補:         200
+エネルギーによる選別後:        42
+全重原子RMSDによる構造群:        9
+DFT対象の候補:         9
+DFT完了数:          9
+重複を除いたDFT構造:  9
+今回選んだFreq: 3
+選択対象で完了したFreq: 3
+利用可能なFreqの合計:   4
+新規に補ったFreq:  1
+既存のローカルFreq:  3
+外部から再利用したFreq:    0
+既存Freqの合計:  3
 ```
 
-## Morning checklist
+## 探索内で最も電子エネルギーが低い構造
 
-- [x] Job status is SUCCESS
-- [x] Explicit stereochemistry was checked
-- [x] DFT Opt completed: 9
-- [x] Lowest electronic-energy structure found: conf001
-- [x] Lowest structure has zero significant imaginary modes
+```text
+配座:       conf001
+電子エネルギー:          -1359.238243112178 Eh
+相対電子エネルギー差:    0.000 kJ/mol
+Gibbs自由エネルギー:           -1358.78273757
+相対Gibbs自由エネルギー差:0.0
+虚振動数: 0
+```
 
-## Interpretation
+## 計算後の確認項目
 
-This is the lowest-energy structure found among the conformers evaluated in this run. 
-It is not a proven global minimum and is not an experimentally determined structure. 
-Zero imaginary modes only supports local-minimum character for that calculated structure.
+- [x] 計算状態はSUCCESS（成功）
+- [x] 指定された立体配置を確認した
+- [x] DFT Opt完了数: 9
+- [x] 探索内の最低電子エネルギー構造: conf001
+- [x] 最低エネルギー構造には、集計対象となる有意な虚振動がない
 
-## Low-frequency caution
+## 解釈
 
-Freq-completed structures contain 20 modes below the configured 
-50 cm^-1 reporting threshold. Their Gibbs energies can be sensitive to the 
-harmonic/quasi-RRHO treatment and should be interpreted cautiously.
+この計算で評価した配座の中で、最も電子エネルギーが低かった構造である。
+大域最小を証明した構造でも、実験で決定した構造でもない。
+虚振動がないことは、その計算構造の局所極小性を支持する範囲の結果である。
+
+## 低振動数についての注意
+
+Freqが完了した構造には、設定した50 cm^-1の報告閾値を下回るモードが20個ある。Gibbs自由エネルギーは調和近似・quasi-RRHOの扱いに影響される可能性があるため、解釈に注意が必要である。

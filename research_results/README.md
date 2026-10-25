@@ -1,9 +1,9 @@
-# Curated computational results
+# 軽量解析データの案内
 
-See the [Japanese index](READMEja.md), [public data guide](../RESEARCH_DATA_GUIDE.md), and [methods and results](../METHODS_AND_RESULTS_JA.md).
+[日本語の目次](READMEja.md)、[公開データの案内](../RESEARCH_DATA_GUIDE.md)、[方法と結果](../METHODS_AND_RESULTS_JA.md)を参照してください。
 
-This directory retains a historical lightweight snapshot, mainly through 23 August 2026: parsed JSON/CSV, reports, ensemble metadata, selected XYZ structures, and provenance records. [SNAPSHOT_MANIFEST.json](SNAPSHOT_MANIFEST.json) maps the snapshot data to their original files and hashes. This index has been edited for the public package; the data retain their original scope.
+このフォルダには、主に2026年8月23日までの解析を保存しています。内容は、抽出済みのJSON/CSV、報告書、配座集合の情報、選択したXYZ座標、計算の由来を示す記録です。[SNAPSHOT_MANIFEST.json](SNAPSHOT_MANIFEST.json)に元ファイルとの対応とハッシュがあります。目次は公開用に編集しましたが、数値データの収録範囲は元のままです。
 
-Later independent protonation analyses and runEDDB logs are in [supplementary](../supplementary/README.md). Selected Bz small-model NEB-TS/Freq/IRC records are in [h11_evidence](../h11_evidence/README.md).
+後期の独立したプロトン化解析とrunEDDBログは[supplementary](../supplementary/README.md)、Bz小モデルのNEB-TS/Freq/IRCの選択記録は[h11_evidence](../h11_evidence/README.md)にあります。
 
-The full raw calculation archive and all execution code are outside this package. `${WORKSPACE}` marks the original workspace prefix, not a path guaranteed to exist in this public package. Computational structures are not experimental structures. Incomplete frequency coverage, different conformer selection sets, and electronic-energy weighting must be considered when interpreting the reports.
+計算の全原本と実行コード一式は、この公開資料には含まれません。`${WORKSPACE}` は元の作業フォルダを表す置換記号であり、その後ろのパスが公開資料内にも存在するとは限りません。計算で得た構造は実験構造ではありません。Freqを実施した構造が一部だけであること、配座の選択集合が解析ごとに異なること、重み付けに電子エネルギーを使っていることに注意して読んでください。

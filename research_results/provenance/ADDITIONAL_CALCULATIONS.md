@@ -1,147 +1,83 @@
-# Additional calculation record
+# 追加計算の記録
 
-## Missing frequency calculations
+以下は、各追加計算を判断した時点の記録です。実施前の方針・所要時間の見積りと、後に得られた結果を分けて記載しています。
 
-Before execution, two frequency-only jobs were selected:
+## 不足していた振動数計算
 
-| Molecule | Conformer | Relative electronic energy | Reason |
+実行前に、Freqだけを行う次の二つの計算を選んだ。
+
+| 分子 | 配座 | 相対電子エネルギー | 選んだ理由 |
 | --- | ---: | ---: | --- |
-| 1Bz-LSD_RR | conf008 | 4.785 kJ/mol | Inside the configured 5 kJ/mol window but omitted by the maximum-three limit |
-| 1SB-LSD_RR | conf006 | 1.095 kJ/mol | Low-energy structure lacking thermochemistry and local-minimum assessment |
+| 1Bz-LSD_RR | conf008 | 4.785 kJ/mol | 設定した5 kJ/molの範囲内だが、最大三つという選択数の上限で外れた |
+| 1SB-LSD_RR | conf006 | 1.095 kJ/mol | 低エネルギー構造だが、熱化学量と局所極小性の確認が不足していた |
 
-Conditions are unchanged from the ensemble runs: ORCA 6.1.1,
-B3LYP/def2-SVP, charge 0, multiplicity 1, `nprocs 16`, and
-`maxcore 1000`. The optimized XYZ coordinates are used directly; Opt is not
-rerun. New files are written only below each run's
-`conformers/frequency_additions/<conformer>` directory.
+条件は元の配座集合の計算と同じで、ORCA 6.1.1、B3LYP/def2-SVP、電荷0、多重度1、`nprocs 16`、`maxcore 1000`である。最適化済みXYZをそのまま使い、Optは再実行しない。新規ファイルは各計算の `conformers/frequency_additions/<conformer>` 以下だけに書く。
 
-Estimated wall time from the completed jobs on this host is about 80 minutes
-for 1Bz-LSD_RR and 115 minutes for 1SB-LSD_RR, or about 3--4 hours when run
-sequentially. These jobs can change the conditional Gibbs weighting and the
-local-minimum status of two already-low-energy structures. They cannot resolve
-the incomplete SB conformer search or prove a global minimum.
+同じPCで完了した計算に基づく所要時間の見積りは、1Bz-LSD_RRが約80分、1SB-LSD_RRが約115分で、順番に実行すると約3--4時間だった。この計算により、低エネルギーの二つの構造について、局所極小性の判定や、Freqがある部分集合だけのGibbs重みが変わる可能性があった。SBの配座探索の不足を解消したり、大域最小を証明したりする計算ではない。
 
-No additional geometry optimization is authorized by this record.
+この段階の記録では、追加の構造最適化は実行対象にしていない。
 
-Two earlier Bz conf008 launch attempts are retained non-destructively below
-`conformers/frequency_additions/incomplete_attempts`. One was a deliberately
-terminated startup check and one failed in the PowerShell wrapper before a
-meaningful ORCA run because CLI progress on stderr was treated as a terminating
-error. They are operational history, not final quantum-calculation failures;
-the distinction is recorded in `operational_history.json`.
+それ以前のBz conf008の起動試行二つは、`conformers/frequency_additions/incomplete_attempts` 以下に保存した。一つは意図して停止した起動確認、もう一つはCLIがstderrへ出した進捗をPowerShell側が終了エラーとして扱ったため、本格的なORCA計算の前に失敗した試行である。これらは実行上の履歴であり、最終的な量子化学計算の失敗とは区別する。区別は `operational_history.json` に記録されている。
 
-## SB force-field pool screening
+## SBの力場候補集合の予備探索
 
-Common-scaffold re-clustering reduces the 22 all-heavy-atom force-field
-clusters to 9 scaffold clusters. Seven are represented within 0.75 Angstrom
-by an optimized DFT structure; the representatives of two remaining clusters
-are ETKDG/MMFF pool indices 46 and 109.
+共通骨格で群分けし直すと、全重原子RMSDによる力場段階の22群は9群になった。そのうち七つには、RMSD 0.75 Angstrom以内にDFT最適化済み構造があった。残る二つの代表は、ETKDG/MMFF候補集合の番号46と109である。
 
-Before any additional geometry optimization, run one B3LYP/def2-SVP
-single-point calculation on each retained MMFF94s geometry. Compare these
-unrelaxed energies against the first-cycle single-point energies already
-present in the retained Opt outputs. This is a screening comparison only:
-an unoptimized single-point energy is not a conformer free energy and cannot
-replace an Opt/Freq result.
+追加の構造最適化に進む前に、保存した各MMFF94s構造でB3LYP/def2-SVPの単一点計算を一つずつ行う方針とした。既存Opt出力の最初の計算サイクルのエネルギーと比較する。これは候補を絞る比較であり、未最適化の単一点エネルギーを配座自由エネルギーとして使ったり、Opt/Freqの代わりにしたりしない。
 
-- New jobs: 2 single points; no Opt and no Freq.
-- Charge/multiplicity: 0/1.
-- Resources: nprocs 16, maxcore 1000 MB.
-- Estimated wall time after the current Freq queue: 5-20 minutes total.
-- Decision impact: an omitted candidate comparable to or below the best
-  retained initial-geometry energy justifies one additional Opt; a clearly
-  higher result argues against spending hours on it, but does not prove the
-  basin is absent.
+- 新規計算は単一点2件。OptとFreqは行わない。
+- 電荷・多重度は0/1。
+- 資源設定はnprocs 16、maxcore 1000 MB。
+- 実行中だったFreqの後に行う場合、合計5-20分と見積もった。
+- 選択から漏れた候補の初期構造エネルギーが、既存の最良候補と同程度かそれより低ければ、Optを一つ追加する根拠になる。明らかに高ければ、時間をかける優先度は下がるが、その配座領域が存在しないという証明にはならない。
 
-After the initial environment check, `xTB 6.7.1pre` was found in the installed
-ORCA 6.1.1 directory. Therefore the first independent reranking step is updated
-to GFN2-xTB tight geometry optimization for all 9 common-scaffold cluster
-representatives. This compares relaxed structures at one consistent cheap
-electronic-structure level and is preferable to comparing MMFF rankings alone.
+環境を確認すると、導入済みのORCA 6.1.1フォルダに `xTB 6.7.1pre` があった。そのため、独立した順位の見直しを先に行う方法へ変更し、共通骨格9群の代表すべてをGFN2-xTBで厳しく最適化する方針とした。同じ安価な電子構造手法で緩和した構造を比較できるため、MMFFの順位だけで判断するより適していると考えた。
 
-- New jobs: 9 GFN2-xTB Opt jobs; these are not DFT Opt jobs.
-- Estimated wall time: 10-45 minutes total on this host.
-- The original `(6aR,9R)` assignment is validated after every xTB Opt.
-- The two B3LYP/def2-SVP single points (pool 46 and 109) are conditional: run
-  them only if xTB leaves an omitted basin within 10 kJ/mol or otherwise makes
-  it competitive. This avoids unnecessary work.
+- 新規計算はGFN2-xTB Opt 9件。DFTのOptではない。
+- このPCで合計10-45分と見積もった。
+- 各xTB Opt後に、元の `(6aR,9R)` 配置を保持しているか確認する。
+- 候補46と109のB3LYP/def2-SVP単一点は、xTBで選択外の配座領域が10 kJ/mol以内に残る場合や、ほかの理由で比較対象として有力になった場合だけ実行する条件付きとした。不要な計算を避けるためである。
 
-### Additional DFT Opt decision after screening
+### 予備探索後のDFT Opt追加の判断
 
-Both independent screens retain pool 109 as the strongest omitted candidate:
+二つの独立した予備探索では、候補109が、選択外の候補の中で最も有力だった。
 
-| pool | GFN2-xTB relative energy | B3LYP/def2-SVP initial-geometry SP relative to retained best initial geometry |
+| 候補番号 | GFN2-xTB相対エネルギー | B3LYP/def2-SVP初期構造単一点：既存の最良初期構造との差 |
 | ---: | ---: | ---: |
 | 109 | 5.04 kJ/mol | 4.62 kJ/mol |
 | 46 | 6.88 kJ/mol | 6.48 kJ/mol |
 
-Existing DFT Opt jobs on this host required about 24-46 minutes and relaxed
-the initial structures by amounts that vary by several kJ/mol. Pool 109 can
-therefore still enter the low-energy DFT set. Run exactly one additional
-B3LYP/def2-SVP Opt from the retained pool-109 MMFF94s geometry, with charge 0,
-multiplicity 1, nprocs 16, and maxcore 1000 MB.
+同じPCでの既存DFT Optは約24-46分かかり、構造緩和によるエネルギー低下には数kJ/molの違いがあった。そのため候補109がDFTの低エネルギー集合に入る可能性は残っていた。保存済みの候補109のMMFF94s構造から、B3LYP/def2-SVPのOptを一つだけ追加する方針とした。電荷0、多重度1、nprocs 16、maxcore 1000 MBを使う。
 
-- Estimated wall time: 25-50 minutes.
-- Output is written to the comparison directory, not into or over an existing
-  ensemble conformer directory.
-- Pool 46 is not optimized in this pass.
-- Decision impact: if pool 109 converges to a unique structure near the current
-  best, the SB search asymmetry materially affects the hypothesis comparison;
-  if it converges to an existing minimum or remains clearly higher, additional
-  DFT expansion has lower immediate value.
-- Freq is not pre-authorized by this decision. If the new structure is unique
-  and low enough to affect the Gibbs comparison, its Freq need and estimated
-  cost are reported separately before execution.
+- 所要時間は25-50分と見積もった。
+- 出力は比較用フォルダに保存し、既存の配座フォルダへ書き込んだり上書きしたりしない。
+- この段階では候補46を最適化しない。
+- 候補109が既存の最良候補に近い独自の構造へ収束すれば、SB側の探索範囲の不足が仮説比較に影響する。既存の極小と重複する場合や明らかに高い場合は、DFT探索を広げる当面の優先度が下がる。
+- Freqはこの判断には含めない。新構造が独自で、Gibbs比較に影響するほど低エネルギーなら、Freqの必要性と見積りを実行前に別途報告する。
 
-### Pool-109 Opt outcome and Freq decision
+### 候補109のOpt結果とFreqの判断
 
-The targeted Opt converged in 23.5 minutes at -1767.603665704513 Eh. It retained
-the RR stereochemistry, lies 4.03 kJ/mol above the existing current best, and
-is a new common-scaffold structure (closest existing core RMSD 1.141 Angstrom).
+追加Optは23.5分で収束し、電子エネルギーは-1767.603665704513 Ehだった。RRの立体配置を保持し、既存の探索内最良候補より4.03 kJ/mol高い。共通骨格も既存構造とは異なり、最も近い既存構造との骨格RMSDは1.141 Angstromだった。
 
-Five existing SB structures lie between 0 and 1.10 kJ/mol, so pool 109 is not a
-top-three electronic-energy Freq target even though it is inside the 5 kJ/mol
-window. A new Freq would be expected to take about 118 minutes on this host.
-It is not run in this preliminary pass. The structure is included in the
-electronic-energy sensitivity analysis with `frequency_calculated: false` and
-`imaginary_modes: null`; it is excluded from Gibbs weighting and is not called
-a confirmed local minimum.
+既存のSB構造五つが0〜1.10 kJ/molにある。そのため候補109は5 kJ/molの範囲内でも、電子エネルギー上位三つのFreq対象には入らない。このPCで新しいFreqに約118分かかると見積もり、この予備比較では実行しなかった。構造は電子エネルギーの感度解析に含め、`frequency_calculated: false`、`imaginary_modes: null`と記録した。Gibbs重み付けからは除き、確認済みの局所極小とは呼ばない。
 
-## Robust charge/frontier-property calculations
+## 電荷・フロンティア軌道の物性計算
 
-The retained Opt outputs do not contain MBIS or CHELPG charges and do not
-contain atom-resolved frontier-orbital populations. After the missing Freq
-jobs, property-only single points may be run on the low-electronic-energy
-subsets (within 5 kJ/mol, capped at five structures per molecule) using the
-same B3LYP/def2-SVP model and retained optimized coordinates.
+保存済みOpt出力には、MBIS電荷、CHELPG電荷、原子別のフロンティア軌道の電子分布がなかった。不足していたFreqの後に、低電子エネルギー部分集合で、物性解析用の単一点を実行できる方針とした。範囲は5 kJ/mol以内、各分子最大五つの構造で、同じB3LYP/def2-SVPモデルと保存済み最適化座標を使う。
 
-- Requested properties: MBIS, CHELPG, and ORCA frontier-MO population output.
-- Geometry changes: none; no Opt and no Freq.
-- Estimated wall time: 30-90 minutes total for the matched low-energy subset.
-- Decision impact: this can make the preliminary electronic comparison more
-  robust than Mulliken/Loewdin alone. It still does not calculate a hydrolysis
-  barrier or separate substituent effects from solvation/enzyme effects.
+- 対象の物性はMBIS、CHELPG、ORCAのフロンティアMO電子分布。
+- 座標は変えない。OptもFreqも行わない。
+- 対応する低エネルギー部分集合で、合計30-90分と見積もった。
+- Mulliken/Loewdinだけよりも、複数の指標で予備的な電子状態比較を確認できる。ただし、加水分解障壁や、溶媒・酵素から分離した置換基効果を計算するものではない。
 
-### Property-only outcome
+### 物性解析用単一点の結果
 
-The property-only jobs completed for four Bz and six SB structures, including
-the targeted pool-109 follow-up. All jobs reused the retained optimized XYZ
-coordinates and did not perform Opt or Freq. The resulting MBIS/CHELPG values
-cover about 93% of the common-scaffold-unique electronic weight in each
-molecule; uncovered structures are retained as null rather than imputed.
+Bzの四つ、SBの六つの構造で計算が完了した。SBには追加した候補109も含む。すべて保存済みの最適化XYZを再利用し、OptとFreqは行っていない。MBIS/CHELPGが得られた構造は、各分子の共通骨格の重複を除いた電子エネルギー重みの約93%を占める。未計算の構造は推定値で埋めず、nullのまま保持した。
 
-The preliminary analysis detects a consistent lower carbonyl-C MBIS charge and
-lower benzoyl-center LUMO population in SB. CHELPG, bond-length, Mayer-order,
-dipole, and carbonyl-stretch shifts are smaller relative to conformer spread.
-This is recorded as an electronic-structure signal at the present gas-phase
-B3LYP/def2-SVP level, not as a hydrolysis-rate prediction.
+予備解析では、SBのカルボニルCのMBIS電荷と、ベンゾイル中心のLUMO電子分布が、一貫して低くなる差を検出した。CHELPG、結合長、Mayer結合次数、双極子、カルボニル伸縮の差は、配座のばらつきに対して小さかった。現在の気相B3LYP/def2-SVPモデルでの電子構造の差として記録し、加水分解速度の予測とは扱わない。
 
-### Remaining pool-46 decision
+### 残った候補46の判断
 
-Pool 46 is now the only common-scaffold cluster in the regenerated SB
-force-field window without a DFT-optimized representative. It remained 6.88
-kJ/mol above the xTB-screen minimum and 6.48 kJ/mol above the best retained
-initial geometry in the unrelaxed B3LYP/def2-SVP single-point comparison.
-No further Opt was started. If complete coverage is later prioritized, one Opt
-is estimated at 0.4--0.8 hours; Freq (about 2 hours) is warranted only if that
-Opt reaches the final low-energy/Freq selection region.
+再生成したSBの力場エネルギー範囲内で、共通骨格にDFT最適化済み代表がない群は候補46だけとなった。xTB最適化後は最小値より6.88 kJ/mol高く、未緩和のB3LYP/def2-SVP単一点では既存の最良初期構造より6.48 kJ/mol高かった。
+
+それ以上のOptは開始しなかった。将来、探索範囲をすべて覆うことを優先するなら、Opt一つを0.4--0.8時間と見積もる。Freq約2時間は、そのOptが最終的な低エネルギー集合・Freq選択範囲へ入った場合にだけ検討する。

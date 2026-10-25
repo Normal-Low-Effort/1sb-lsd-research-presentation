@@ -3,8 +3,10 @@
     "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/protonation_ensemble_refinement/FINDINGS_JA.md",
     "published_relative_path": "supplementary/protonation_ensemble_refinement/FINDINGS_JA.md",
     "original_sha256": "c32739d29297ff8037a3effaab2f9e4c90e88bbe6985d5d0a5919550497373b2",
-    "published_sha256": "c32739d29297ff8037a3effaab2f9e4c90e88bbe6985d5d0a5919550497373b2",
-    "content_edits": []
+    "published_sha256": "f1e559b27891006af9798ff4d0f34b8a329313910150a69337d8c6edbebbff70",
+    "content_edits": [],
+    "initial_published_sha256": "c32739d29297ff8037a3effaab2f9e4c90e88bbe6985d5d0a5919550497373b2",
+    "document_revision": "2026-10-25：日本語化・推敲。元ファイルのハッシュと科学計算値は保持。"
   },
   {
     "source_relative_path": "outputs/Bz_vs_SB_preliminary_comparison/protonation_ensemble_refinement/results.json",

@@ -2,7 +2,7 @@
 
 書誌・公式資料の確認日：2026年10月22日。
 
-外部資料は化合物の構造、既報の観測、計算方法の典拠です。本研究固有の計算値は [解析snapshot](research_results/READMEja.md)、[後期補足データ](supplementary/README.md)、[仮説11の記録](h11_evidence/README.md) を参照してください。過去に閲覧した全ページや当時の閲覧日時を完全に復元した一覧ではありません。
+外部資料は化合物の構造、既報の観測、計算方法の典拠です。本研究固有の計算値は [保存した解析データ](research_results/READMEja.md)、[後期補足データ](supplementary/README.md)、[仮説11の記録](h11_evidence/README.md) を参照してください。過去に閲覧した全ページや当時の閲覧日時を完全に復元した一覧ではありません。
 
 ## 化合物・既報の観測
 
@@ -34,7 +34,7 @@
 
 <a id="ref-7"></a>
 
-**[7]** Landrum, G. et al. [rdkit/rdkit: 2026_03_5 (Q1 2026) Release](https://doi.org/10.5281/zenodo.21741729). Zenodo (2026), Release_2026_03_5. DOI: 10.5281/zenodo.21741729. 主ensembleの記録にあるRDKit **2026.03.5**に対応する版付き出典。[公式引用案内](https://www.rdkit.org/new_docs/Overview.html)。
+**[7]** Landrum, G. et al. [rdkit/rdkit: 2026_03_5 (Q1 2026) Release](https://doi.org/10.5281/zenodo.21741729). Zenodo (2026), Release_2026_03_5. DOI: 10.5281/zenodo.21741729. 主配座集合の記録にあるRDKit **2026.03.5**に対応する版付き出典。[公式引用案内](https://www.rdkit.org/new_docs/Overview.html)。
 
 <a id="ref-8"></a>
 
@@ -81,4 +81,4 @@ runEDDBのfrozen-NMB構成の文献は、**当時の実行ログでは `in prepa
 | N1アシル類縁体・Si含有類縁体の参考例 | [3][4]。1SBへの直接外挿はしない |
 | ORCA、RDKit、GFN2-xTB | [6][7][8]と使用した計算法の補足出典 |
 | runEDDBの断片・π非局在化解析 | [9]、NAO・BOP・EDDB密度分解・NOBDの補足出典、収録ログ |
-| 本研究固有の数値・採否 | 解析snapshot、後期補足データ、仮説11の計算記録。「本研究の計算結果」と明記 |
+| 本研究固有の数値・採否 | 解析保存データ、後期補足データ、仮説11の計算記録。「本研究の計算結果」と明記 |

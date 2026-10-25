@@ -12,5 +12,165 @@
         "Preserved all numerical calculation results."
       ]
     }
-  ]
+  ],
+  "historical_edits_note": "既存のreviewed_onとeditsは初回公開時の記録。今回の現行文書はeditorial_revisionの対応を参照。",
+  "editorial_revision": {
+    "reviewed_on": "2026-10-25",
+    "source_public_commit": "09a120fb20d705744761d92dc6fe88b39ecbcc4a",
+    "tool": {
+      "name": "yomiyasu",
+      "version": "2.4.0",
+      "repository": "https://github.com/nanaism/yomiyasu",
+      "commit": "552c12c472ddfb79e2ee7a15219847782686a945"
+    },
+    "audience": "高校生を含む一般の読者。専門用語と識別子は必要に応じて保持。",
+    "scope_note": "公開済みMarkdown24件の日本語化・推敲。収録する科学計算の対象期間と計算値は変更していない。",
+    "verification": "24文書のlint・diff・最終稿ハッシュ照合、数表・小数値・計算状態・計算要約の数値の保持、リンク照合。lint件数は品質の合否ではない。",
+    "documents": [
+      {
+        "path": "h11_evidence/README.md",
+        "previous_published_sha256": "ce0d8d2d369cce1550134f1b035df37a125692116bf39fbf429b1314534e6e00",
+        "published_sha256": "5d6709ad2797f8e6f1e3d3004964206500b4b59a61caf735f54d90ddb0f7f508",
+        "change": "日本語化・表現の推敲。専門用語・識別子・計算値・状態の区別を保持。"
+      },
+      {
+        "path": "METHODS_AND_RESULTS_JA.md",
+        "previous_published_sha256": "818d24f2d68a6a6d7d4bb5c886e504c60e4439733e4606b0606863336cc8e5ca",
+        "published_sha256": "ee58c5b790182089aec735d8eeaca97ea0ff8517e368f6badba5d5cdc3abc6c8",
+        "change": "日本語化・表現の推敲。専門用語・識別子・計算値・状態の区別を保持。"
+      },
+      {
+        "path": "README.md",
+        "previous_published_sha256": "632247fd705ad5b98adfcedd5c705bd86e76b3edc3b49576327e70b2bca526a1",
+        "published_sha256": "015bb484d7b1e47cfb69d959ebb49fcc30365dee6eabbded0dcdd143adfcfac0",
+        "change": "日本語化・表現の推敲。専門用語・識別子・計算値・状態の区別を保持。"
+      },
+      {
+        "path": "REFERENCES.md",
+        "previous_published_sha256": "ae536599f22d90fcfe9ba1c72f30e7bd5470811f3bf4d4a3dd2b437f9ee111eb",
+        "published_sha256": "9e97b5c9402d71d595f893cdd27800b29d78289c627dd6d3b4775b23e324f60c",
+        "change": "日本語化・表現の推敲。専門用語・識別子・計算値・状態の区別を保持。"
+      },
+      {
+        "path": "RESEARCH_DATA_GUIDE.md",
+        "previous_published_sha256": "48f5fb4c0bbd1e7f04ad069b111c9ee49a8ddfefd990844f2ddc206d828e34d4",
+        "published_sha256": "d45d884e825939c3e18cd146b7fcdb0ded32f952d8e83cc4a7e52848579d5126",
+        "change": "日本語化・表現の推敲。専門用語・識別子・計算値・状態の区別を保持。"
+      },
+      {
+        "path": "RESEARCH_DATA_GUIDEja.md",
+        "previous_published_sha256": "00976d34abffa890a8366f6fe7b66ec0cc8d123b4d465e8d0474ac14500979af",
+        "published_sha256": "337876bd2412b70b01de43f37a6415f904b362f571abff9205c8b0f5ec522422",
+        "change": "日本語化・表現の推敲。専門用語・識別子・計算値・状態の区別を保持。"
+      },
+      {
+        "path": "research_results/comparison/explicit_water_screen/FINDINGS_JA.md",
+        "previous_published_sha256": "c7a3b8be796d333e0396b35f9751a83bc4a2ee47d8ec9af5913b3aa823af573a",
+        "published_sha256": "ac40ee51ffae8690c86e576230a30e3874e14be1d68529dfdba427a35c59b199",
+        "change": "日本語化・表現の推敲。専門用語・識別子・計算値・状態の区別を保持。"
+      },
+      {
+        "path": "research_results/comparison/hypotheses4_5/FINDINGS_JA.md",
+        "previous_published_sha256": "9dac20b2f3d43c58931581d782c725cf353af427a6d2d44bdc85b644d9677a60",
+        "published_sha256": "ddf3b414e381d79aa1524eb8408a015dda9eb03233a2770dd91401d95449ca2e",
+        "change": "日本語化・表現の推敲。専門用語・識別子・計算値・状態の区別を保持。"
+      },
+      {
+        "path": "research_results/comparison/para_substituent_series/FINDINGS_JA.md",
+        "previous_published_sha256": "954421afbab2b39bb933cbda337cebad54b63ca71f48c7fca84d4279fce48e8e",
+        "published_sha256": "d02600bf50f97bc558e02ec27fb034501bfd273f3e2551efa66078bc9b540641",
+        "change": "日本語化・表現の推敲。専門用語・識別子・計算値・状態の区別を保持。"
+      },
+      {
+        "path": "research_results/comparison/PRELIMINARY_COMPARISON.md",
+        "previous_published_sha256": "7e47d111c8821d21ea61cc4e1ca550e144bb0650034c459361b27a180bc232a9",
+        "published_sha256": "5d34e74cee51f4dee912ca6ab4a41ccbb5ab7a3707bb2aaf54eac902c3c0a94e",
+        "change": "日本語化・表現の推敲。専門用語・識別子・計算値・状態の区別を保持。"
+      },
+      {
+        "path": "research_results/comparison/PRELIMINARY_COMPARISON_JA.md",
+        "previous_published_sha256": "5992a7f175a56c6b37a1c7e853e062df9ce4e043219805b86cd1f4debe7b7dae",
+        "published_sha256": "3932d6715881a36d90679753e1ef8eafec0670e3676ec5e244c7fb285cde306b",
+        "change": "日本語化・表現の推敲。専門用語・識別子・計算値・状態の区別を保持。"
+      },
+      {
+        "path": "research_results/comparison/protonation_screen/FINDINGS_JA.md",
+        "previous_published_sha256": "f366bb81026348620039e3c15d0915d3d62d0b56b2c6a7f08415e3d362e048ef",
+        "published_sha256": "da36143d8f2ffaec868bad44bb050fa72d08a432587678d2c3df32c01d8926db",
+        "change": "日本語化・表現の推敲。専門用語・識別子・計算値・状態の区別を保持。"
+      },
+      {
+        "path": "research_results/context/METABOLIC_INFERENCE_LIMITS_JA.md",
+        "previous_published_sha256": "1e47fcf3c74a4fac3fc16f1e70a9e2e02dbd66f01d858352b3fa35a18fa67fae",
+        "published_sha256": "7911a033e72631cf01496dd6a8efcb6b469ed5892234fe0bc5f5cf50e7f3f8c1",
+        "change": "日本語化・表現の推敲。専門用語・識別子・計算値・状態の区別を保持。"
+      },
+      {
+        "path": "research_results/ensembles/1Bz-LSD_RR/RUN_SUMMARY.md",
+        "previous_published_sha256": "7d22b8ecdfdaedd53b3ce55a71b2a9868147735094b827c06e49c9b08345831e",
+        "published_sha256": "820636e79e6bbef6e9a3703d15df5129e5234e458453a5135b4a9d89a66d2a1c",
+        "change": "日本語化・表現の推敲。専門用語・識別子・計算値・状態の区別を保持。"
+      },
+      {
+        "path": "research_results/ensembles/1p-iPrBz-LSD_RR/RUN_SUMMARY.md",
+        "previous_published_sha256": "af6526e0049016865e195f5787cfb012b99e9597713d03a452eaa0df280bfb33",
+        "published_sha256": "e538b4476af0b53d9261cd03d9cf6ae28750910bc98a78839f8b1dbd1ebcab6b",
+        "change": "日本語化・表現の推敲。専門用語・識別子・計算値・状態の区別を保持。"
+      },
+      {
+        "path": "research_results/ensembles/1pMeBz-LSD_RR/RUN_SUMMARY.md",
+        "previous_published_sha256": "6adbf623a76058cf136ce1f34279149c2ee9e20b05e5184a2181ba915ef18327",
+        "published_sha256": "6cfbc09461f2353dffb82045b07924df7f5dafad45a5f3129a107518bc6f5cfe",
+        "change": "日本語化・表現の推敲。専門用語・識別子・計算値・状態の区別を保持。"
+      },
+      {
+        "path": "research_results/ensembles/1ptBuBz-LSD_RR/RUN_SUMMARY.md",
+        "previous_published_sha256": "0d0c1d63ce0fb1c980e93e2633696ace65c6eaff36b14476f2c21f67fb72ec08",
+        "published_sha256": "21cce50e1ae945248359d4672cb38011484e0d3c356a2585166ce1c58fe2b634",
+        "change": "日本語化・表現の推敲。専門用語・識別子・計算値・状態の区別を保持。"
+      },
+      {
+        "path": "research_results/ensembles/1SB-LSD_RR/RUN_SUMMARY.md",
+        "previous_published_sha256": "2509beddef6f1d7943417beefcc3944b7d9241117ffd235dd68daecbb7b716b9",
+        "published_sha256": "22c8c225e4f027e4a7f52bdc5d0f9a47a79cdb575650cfc768d6c70d4258eb84",
+        "change": "日本語化・表現の推敲。専門用語・識別子・計算値・状態の区別を保持。"
+      },
+      {
+        "path": "research_results/provenance/ADDITIONAL_CALCULATIONS.md",
+        "previous_published_sha256": "81cc16d2d8732da2f52da3b5dc9db9d4ba5fbb35c3f834930eb5c1702d4fe87f",
+        "published_sha256": "c794972d9fae45b2c8d6ca238bcfcde009610b9149db733bb516bf2fe5ae7a9e",
+        "change": "日本語化・表現の推敲。専門用語・識別子・計算値・状態の区別を保持。"
+      },
+      {
+        "path": "research_results/provenance/IMPLEMENTATION_NOTES.md",
+        "previous_published_sha256": "eb024f6783a66212e6361d430f61a3e64382f48a9e90d92c7530852e60d86537",
+        "published_sha256": "7a2faf94ec9037368b07eed634bed132e85bbd659fb6203d7e6b7094bf394d44",
+        "change": "日本語化・表現の推敲。専門用語・識別子・計算値・状態の区別を保持。"
+      },
+      {
+        "path": "research_results/README.md",
+        "previous_published_sha256": "f11c6c92340b5e333783c9e8a7270c3876f108ba23e380fe7c69fc2d0a38b5c8",
+        "published_sha256": "7943d9ee9701de26f7869c4cb9c07fce0bd7d9ca5a91eb0f9e26396d86f6e4ff",
+        "change": "日本語化・表現の推敲。専門用語・識別子・計算値・状態の区別を保持。"
+      },
+      {
+        "path": "research_results/READMEja.md",
+        "previous_published_sha256": "5b849f3e4d6c9e461c146f7236ab9bc0b5da9e38e0089c53d2354e83c3d033b9",
+        "published_sha256": "a2e7a6d33cc821965582346b70ec540b80556564b17647a7c031d3b927eaca2f",
+        "change": "日本語化・表現の推敲。専門用語・識別子・計算値・状態の区別を保持。"
+      },
+      {
+        "path": "supplementary/protonation_ensemble_refinement/FINDINGS_JA.md",
+        "previous_published_sha256": "c32739d29297ff8037a3effaab2f9e4c90e88bbe6985d5d0a5919550497373b2",
+        "published_sha256": "f1e559b27891006af9798ff4d0f34b8a329313910150a69337d8c6edbebbff70",
+        "change": "日本語化・表現の推敲。専門用語・識別子・計算値・状態の区別を保持。"
+      },
+      {
+        "path": "supplementary/README.md",
+        "previous_published_sha256": "e60e8a43ec4160bcd97de827ffd1a9e1c6fa35c29ed4edf8f48b455d59d20f81",
+        "published_sha256": "7c36ecd4be8eca006957fb59ef8c80eb887015afb4a5d3549b2b5e5c839baa42",
+        "change": "日本語化・表現の推敲。専門用語・識別子・計算値・状態の区別を保持。"
+      }
+    ]
+  }
 }

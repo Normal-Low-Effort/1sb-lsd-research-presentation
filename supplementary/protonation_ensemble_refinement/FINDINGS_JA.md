@@ -1,10 +1,10 @@
-# 仮説7 N6H+独立ensemble refinement
+# 仮説7 N6H+の独立した配座探索の精密化
 
-N6H+の両配置を明示し、各配置200 ETKDG conformersから力場選別後、GFN2-xTB/ALPB(水)で最適化した。既存screenは読み取り専用で比較対象として保持した。これはpKa計算でもORCA計算でもない。
+N6H+の両配置を明示し、各配置200 ETKDG配座候補から力場選別後、GFN2-xTB/ALPB(水)で最適化した。既存予備検討は読み取り専用で比較対象として保持した。これはpKa計算でもORCA計算でもない。
 
-| molecule | previous minimum / Eh | refined minimum / Eh | refined−previous / kJ mol⁻¹ | unique xTB clusters | new representatives |
+| 分子 | 以前の最小値 / Eh | 精密化後の最小値 / Eh | 精密化後−以前 / kJ mol⁻¹ | 重複を除いたxTB構造群 | 新しい代表構造 |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | 1Bz-LSD_RR | -89.760505641393 | -89.770205818179 | -25.468 | 22 | 18 |
 | 1SB-LSD_RR | -101.981166109611 | -101.990778391497 | -25.237 | 24 | 19 |
 
-新規低エネルギーbasinまたは反対N6配置が残る場合、それらを含めて相対プロトン移動cycleを組む。xTB順位だけでpKa差を断定しない。
+新規低エネルギーの配座領域または反対N6配置が残る場合、それらを含めて相対プロトン移動のサイクルを組む。xTB順位だけでpKa差を断定しない。

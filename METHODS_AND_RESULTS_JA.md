@@ -1,12 +1,12 @@
 # 研究の着想、仮説、検証条件と結果
 
-資料更新：2026年10月22日。計算記録は2026年8月26日まで。
+文章更新：2026年10月25日。計算記録は2026年8月26日まで。
 
 ## 1. 背景と研究目的
 
-LSD（リゼルグ酸ジエチルアミド）のN1位にアシル基を導入した類縁体には、投与後にLSDが検出されるものがあります。本研究の対象はN1-ベンゾイル体の1Bz-LSDと、そのベンゼン環のpara位にTMS基を持つ1SB-LSD（1-TMSBz-LSD）です。両者の `(6aR,9R)` 計算モデルを比較します。
+LSD（リゼルグ酸ジエチルアミド）と分子構造が似た化合物を、LSDアナログ（類縁体）と呼びます。そのうち、LSDのN1位にアシル基を導入した類縁体には、投与後にLSDが検出されるものがあります。本研究の対象はN1-ベンゾイル体の1Bz-LSDと、そのベンゼン環のpara位にTMS基を持つ1SB-LSD（1-TMSBz-LSD）です。両者の `(6aR,9R)` 計算モデルを比較します。
 
-着想の説明は、1Bz-LSDの構造からN1位の置換に関心を持ち、関連化合物として1SB-LSDを知り、大きなTMS基が加水分解を妨げないかと疑問を持った、という流れに整理しました。一方、厚生労働省の議事録では、1SB-LSDを投与したマウスの血清からLSDを検出したと報告されています。[文献1](REFERENCES.md#ref-1) そこから「立体的な妨げがあると考えた構造でも、なぜLSD生成が成立し得るか」を問いとしました。
+着想の説明は1Bz-LSDの構造からN1位の置換に関心を持ち、関連化合物として1SB-LSDを知り、大きなTMS基が加水分解を妨げないかと疑問を持った、という流れに整理しました。一方、厚生労働省の議事録では1SB-LSDを投与したマウスの血清からLSDを検出したと報告されています。[文献1](REFERENCES.md#ref-1) そこから「立体的な妨げがあると考えた構造でも、なぜLSD生成が成立し得るか」を問いとしました。
 
 ただし、当初の「TMSが加水分解を大きく妨げる」という前提は十分に検証されていませんでした。また、この公的観測はBz/SBの変換速度が同じことや、1SBが速く加水分解されることを示しません。本稿の導入・章立ては発表用の再構成であり、着想日時や全作業の実施順を完全には再現しません。
 
@@ -20,35 +20,35 @@ LSD（リゼルグ酸ジエチルアミド）のN1位にアシル基を導入し
 
 | 段階 | 記録された条件・解析 | 結果を読む範囲 |
 | --- | --- | --- |
-| 配座候補の生成 | RDKit 2026.03.5、ETKDG候補200、乱数seed 61453。力場はMMFF94sを優先し、不可時UFFへ切替。主Bz/SBの記録ではMMFF94sを使用 | 有限個の候補探索。全配座の網羅ではない |
+| 配座候補の生成 | RDKit 2026.03.5、ETKDG候補200、乱数シード 61453。力場はMMFF94sを優先し、不可時UFFへ切替。主Bz/SBの記録ではMMFF94sを使用 | 有限個の候補探索。全配座の網羅ではない |
 | 候補の選別 | 力場最低エネルギーから10 kJ/mol窓、重原子RMSD閾値0.75 Å、当初のDFT枠は最大10構造 | Bzは9候補、SBは上限10候補。追加・修復計算は別の履歴として保持 |
-| 主DFT計算 | ORCA 6.1.1、B3LYP/def2-SVP、気相、電荷0、多重度1。主最適化は分散補正なし。記録上16 MPI process、maxcore 1000 MB/process | 自由分子の最適化候補。`current best`は探索内最良であり大域最小の証明ではない |
+| 主DFT計算 | ORCA 6.1.1、B3LYP/def2-SVP、気相、電荷0、多重度1。主最適化は分散補正なし。記録上16 MPIプロセス、maxcore 1000 MB/プロセス | 自由分子の最適化候補。`current best`は探索内最良であり大域最小の証明ではない |
 | 振動数計算（Freq） | 原則5 kJ/mol窓から最大3構造を選択し、既存・補足Freqも由来を分けて集計。虚振動の集計閾値は−20 cm⁻¹ | Freq未実施は虚振動0個とは扱わない。低周波と調和近似によりGibbs順位に不確かさがある |
 | 構造比較 | para炭素の外側の置換基枝を除く共通骨格のRMSD閾値0.75 Å、反応中心0.25 Å。原子対応を固定し、対称原子の全置換最小化はしない | TMS末端の回転と骨格変化を区別。対称性を許した最小RMSDそのものではない |
 | 立体アクセス | 固定Bürgi–Dunitz方向のprobeによるaccessible fractionとclearance、さらにpara-H/Me/iPr/tBu/TMS対照 | 静的な接近空間の指標。溶媒、酵素、遷移状態は含まない |
 | 電子状態の感度 | MBIS/CHELPG電荷、Mayer結合次数、HOMO/LUMO寄与、C=O伸縮。B3LYP/PBE0、基底・D3BJ・CPCM(水)、固定構造でTMSをHへ置換する比較も実施 | 指標・計算条件・構造変化への依存を調べる。速度を直接算出しない |
 
-具体的な構造集合と計算値は[Bz ensemble](research_results/ensembles/1Bz-LSD_RR/ensemble.json)、[SB ensemble](research_results/ensembles/1SB-LSD_RR/ensemble.json)、[予備比較](research_results/comparison/PRELIMINARY_COMPARISON_JA.md)、[電子指標の感度解析](research_results/comparison/hypothesis2_validation/analysis.json)にあります。気相DFT、CPCM単一点、xTBの異なるモデルの絶対エネルギーを混ぜて順位付けしません。
+具体的な構造集合と計算値は[Bzの配座集合](research_results/ensembles/1Bz-LSD_RR/ensemble.json)、[SBの配座集合](research_results/ensembles/1SB-LSD_RR/ensemble.json)、[予備比較](research_results/comparison/PRELIMINARY_COMPARISON_JA.md)、[電子指標の感度解析](research_results/comparison/hypothesis2_validation/analysis.json)にあります。気相DFT、CPCM単一点、xTBの異なるモデルの絶対エネルギーを混ぜて順位付けしません。
 
 ## 3. 初期検証の結果とmolecule2fbx
 
 ### 仮説1：大きな直接遮蔽差は検出されない
 
-予備比較の電子エネルギー重み付き集計では、固定攻撃円錐のaccessible fractionはBz/SBとも0.1528、best clearanceのSB−Bz差は約−0.0009 Åでした。後者は配座間のばらつき約0.01 Åより小さい差です。TMS重原子はカルボニルCから5 Å以内にありませんでした。[予備比較](research_results/comparison/PRELIMINARY_COMPARISON_JA.md)
+予備比較の電子エネルギー重み付き集計では、固定攻撃円錐のaccessible fraction（調べた接近方向のうち、計算上通れると判定した割合）はBz/SBとも0.1528、best clearance（接近時の空間的な余裕が最大となる値）のSB−Bz差は約−0.0009 Åでした。後者は配座間のばらつき約0.01 Åより小さい差です。TMS重原子はカルボニルCから5 Å以内にありませんでした。[予備比較](research_results/comparison/PRELIMINARY_COMPARISON_JA.md)
 
 これは調べた構造とprobeで大きな直接遮蔽差を検出しなかったという結果です。para置換基対照でも、TMSがtBu等より明確に接近性を改善するという強い形の仮説1は支持されませんでした。[置換基系列](research_results/comparison/para_substituent_series/FINDINGS_JA.md) 酵素内や反応途中の立体効果は未評価です。
 
 ### 仮説2：小さな電子差は得られるが、速度は決まらない
 
-同じ予備集計で、カルボニルCのMBIS電荷はSB−Bz = −0.00371 e、benzoyl中心のLUMO寄与差は約−0.02154でした。一方、結合長・Mayer結合次数・伸縮振動数などは差が小さく、すべての指標が同程度に強く一致するわけではありません。[予備比較](research_results/comparison/PRELIMINARY_COMPARISON_JA.md)
+同じ予備集計で、カルボニルCのMBIS電荷はSB−Bz = −0.00371 e、ベンゾイル中心のLUMO寄与差は約−0.02154でした。一方、結合長・Mayer結合次数・伸縮振動数などは差が小さく、すべての指標が同程度に強く一致するわけではありません。[予備比較](research_results/comparison/PRELIMINARY_COMPARISON_JA.md)
 
-runEDDBでは、既存のPBE0-D3BJ/def2-TZVP/CPCM(水)波動関数6件を再利用しました。この解析に新しいORCAのSCF・構造最適化・Freqは追加していません。対象は2組の配座と、各組のBz、SB、SBのTMSをHへ置換した固定構造です。共通N1–カルボニル–benzoylの9原子断片をNVB基底で解析し、主解析のfrozen-NMBとrigorous NAO、π軌道の自動選択と対応する7軌道の手動選択を比較しました。
+runEDDBでは、既存のPBE0-D3BJ/def2-TZVP/CPCM(水)波動関数6件を再利用しました。この解析に新しいORCAのSCF・構造最適化・Freqは追加していません。対象は2組の配座と、各組のBz、SB、SBのTMSをHへ置換した固定構造です。共通N1–カルボニル–ベンゾイルの9原子断片をNVB基底で解析し、主解析のfrozen-NMBとrigorous NAO、π軌道の自動選択と対応する7軌道の手動選択を比較しました。
 
-固定構造の「TMSあり−H置換」では、断片全体のEDDB population差は2組で約−0.09042／−0.08449 e、手動対応π成分は約−0.10610／−0.09923 eでした。これは選んだ断片・解析条件での非局在化指標の差です。NBOの二次摂動エネルギーや、加水分解障壁、反応速度ではありません。[EDDB結果](research_results/comparison/hypothesis2_validation/eddb/results.json)、[対応差のCSV](research_results/comparison/hypothesis2_validation/eddb/paired_deltas.csv)、[runEDDB実行ログ](supplementary/README.md)
+固定構造の「TMSあり−H置換」では、断片全体のEDDB電子数（population）の差は2組で約−0.09042／−0.08449 e、手動対応π成分は約−0.10610／−0.09923 eでした。これは選んだ断片・解析条件での非局在化指標の差です。NBOの二次摂動エネルギーや、加水分解障壁、反応速度ではありません。[EDDB結果](research_results/comparison/hypothesis2_validation/eddb/results.json)、[対応差のCSV](research_results/comparison/hypothesis2_validation/eddb/paired_deltas.csv)、[runEDDB実行ログ](supplementary/README.md)
 
 ### molecule2fbxの目的と役割
 
-molecule2fbxを研究で開発した目的は、**ORCAで計算した分子構造をFBX形式へ変換し、視覚的に確認すること**でした。GUIと3Dプレビューは後から追加された機能です。配座ensembleの実行、計算結果の再利用、RMSD比較なども実装されていますが、各機能の追加理由や時期が確認できない部分は未確認とします。実装機能の存在から研究上の動機を推定しません。FBXは表示用であり、数値の根拠は計算入力・出力・座標・解析データです。
+molecule2fbxを研究で開発した目的は、**ORCAで計算した分子構造をFBX形式へ変換し、視覚的に確認すること**でした。GUIと3Dプレビューは後から追加された機能です。配座集合の実行、計算結果の再利用、RMSD比較なども実装されていますが、各機能の追加理由や時期が確認できない部分は未確認とします。実装機能の存在から研究上の動機を推定しません。FBXは表示用であり、数値の根拠は計算入力・出力・座標・解析データです。
 
 ## 4. 追加仮説と検証の対応
 
@@ -57,10 +57,10 @@ molecule2fbxを研究で開発した目的は、**ORCAで計算した分子構�
 | 仮説 | 実施した検討 | 結果・未解決点 | 根拠 |
 | --- | --- | --- | --- |
 | 3：1SB→1Bz→LSDという逐次経路 | 公開資料の照合 | 二つの別々のLSD検出報告は、1Bz中間体を示さない。経路は未実証 | [代謝推論](research_results/context/METABOLIC_INFERENCE_LIMITS_JA.md) |
-| 4：配座集団が変わる | 既存ensembleのRMSD再解析 | 仮説4・5の元集計では共通骨格はBz/SBとも9群、反応中心はともに4群。後のstrict final集合では共通骨格は9／8群であり、集計集合を区別する。これらから生体内の存在比は決まらない | [元集計](research_results/comparison/hypotheses4_5/FINDINGS_JA.md)、[後のstrict集合](research_results/comparison/para_substituent_series/FINDINGS_JA.md) |
-| 5：分子内接触・折り畳みが変わる | 接触・二面角・clearanceの集計 | 調べたSB構造ではTMS–core接触数0。共通部の接触幾何も近い。接触数は相互作用エネルギーではない | [仮説4・5](research_results/comparison/hypotheses4_5/FINDINGS_JA.md) |
-| 6：局所水和が変わる | 対応2組、中性／N6H+、明示的水1分子を9方向に配置しGFN2-xTB/ALPB(水)で最適化 | 表に報告された最良局所水和候補の相互作用差SB−Bzは約−1.63〜−0.24 kJ/mol。局所保持候補は少なく、大きさは配座・状態に依存。十分な水和集団や反応速度は評価していない | [水screen](research_results/comparison/explicit_water_screen/FINDINGS_JA.md) |
-| 7：N6プロトン化で差が変わる | 既存構造screen後、N6H+の両配置を含む各200候補から独立探索。xTB Hessian・熱補正・選択構造のORCA単一点感度 | 両分子で旧screenより低い構造を得た。CPCM(水)の選択集計の相対プロトン化差は約−0.62〜+0.13 kJ/mol。pKaや実際のプロトン化率は未算出 | [後期データ](supplementary/README.md) |
+| 4：配座集団が変わる | 既存配座集合のRMSD再解析 | 仮説4・5の元集計では共通骨格はBz/SBとも9群、反応中心はともに4群。後の最終採用集合では共通骨格は9／8群であり、集計集合を区別する。これらから生体内の存在比は決まらない | [元集計](research_results/comparison/hypotheses4_5/FINDINGS_JA.md)、[後の最終採用集合](research_results/comparison/para_substituent_series/FINDINGS_JA.md) |
+| 5：分子内接触・折り畳みが変わる | 接触・二面角・clearanceの集計 | 調べたSB構造ではTMSと骨格の接触数は0。共通部の接触幾何も近い。接触数は相互作用エネルギーではない | [仮説4・5](research_results/comparison/hypotheses4_5/FINDINGS_JA.md) |
+| 6：局所水和が変わる | 対応2組、中性／N6H+、明示的水1分子を9方向に配置しGFN2-xTB/ALPB(水)で最適化 | 表に報告された最良局所水和候補の相互作用差SB−Bzは約−1.63〜−0.24 kJ/mol。局所保持候補は少なく、大きさは配座・状態に依存。十分な水和集団や反応速度は評価していない | [水和の予備検討](research_results/comparison/explicit_water_screen/FINDINGS_JA.md) |
+| 7：N6プロトン化で差が変わる | 既存構造予備検討後、N6H+の両配置を含む各200候補から独立探索。xTB Hessian・熱補正・選択構造のORCA単一点感度 | 両分子で旧予備検討より低い構造を得た。CPCM(水)の選択集計の相対プロトン化差は約−0.62〜+0.13 kJ/mol。pKaや実際のプロトン化率は未算出 | [後期データ](supplementary/README.md) |
 | 8：酵素内の結合姿勢が変わる | 対応する酵素–基質計算なし | 未検証。自由分子の構造から酵素内の向きは決定できない | [代謝推論](research_results/context/METABOLIC_INFERENCE_LIMITS_JA.md) |
 | 9：酵素・基質の誘導適合 | 対応する動的解析なし | 未検証 | [代謝推論](research_results/context/METABOLIC_INFERENCE_LIMITS_JA.md) |
 | 10：求核付加以外の段階が律速 | 全反応段階の障壁・速度論比較なし | 律速段階は未判定。仮説11は一段階の検討に限る | [仮説11](h11_evidence/README.md) |
@@ -73,6 +73,8 @@ molecule2fbxを研究で開発した目的は、**ORCAで計算した分子構�
 
 ## 5. 仮説11で到達した範囲
 
+ここでは、非酵素的な化学反応の候補としてOH⁻（水酸化物イオン）が関わる反応を仮定しています。OH⁻の直接攻撃が1SB-LSDの実際の代謝機構であると確認したわけではありません。以下は収録した計算記録の時点での結果です。
+
 30原子のBz小モデル、電荷−1、多重度1、ORCA 6.1.1／B3LYP/def2-SVP／CPCM(水)で、四面体中間体からのC–N切断を調べました。採用TS候補の最終Freqでは虚振動1個（−191.86 cm⁻¹）を得て、IRCの後方は四面体中間体側へ、前方の継続計算は切断・プロトン未移動側へ収束しました。その後の終点Optも完了しています。[仮説11の詳細](h11_evidence/README.md)
 
 四面体中間体側の最適化構造を基準とするTSの**電子エネルギー差は+1.410 kcal/mol**です。アミド＋OH⁻からの付加、プロトン移動、標準状態・濃度・エントロピー補正を含む全反応の自由エネルギー障壁ではありません。終点FreqとSB側の同条件NEB/IRCは未実施です。また、NEBに与えた生成物側端点とIRCが実際に到達した構造は異なり、プロトン移動まで一段階で確認したことにはなりません。
@@ -81,17 +83,22 @@ molecule2fbxを研究で開発した目的は、**ORCAで計算した分子構�
 
 主に得られた結果は、調べた静的な自由分子モデルでpara-TMSによる大きな直接遮蔽差を検出しなかったこと、小さい基底状態電子差が得られたこと、Bz小モデルでC–N切断段階の経路候補を具体化したことです。Si–C結合の長さによるTMS固有の明確な立体的有利さは支持されませんでした。
 
-一方、初期仮説の前提である「TMSにより加水分解が大きく困難になる」「それでも速くLSDが生成する」という組合せ自体が実測で確立していません。静的構造のアクセス指標、部分的な配座探索、気相DFT、暗黙溶媒、1水分子screen、小反応モデルから、生体内の酵素・反応速度・主要代謝経路へ直接結び付けることはできません。
+一方、初期仮説の前提である「TMSにより加水分解が大きく困難になる」「それでも速くLSDが生成する」という組合せ自体が実測で確立していません。静的構造のアクセス指標、部分的な配座探索、気相DFT、暗黙溶媒、1水分子予備検討、小反応モデルから、生体内の酵素・反応速度・主要代謝経路へ直接結び付けることはできません。
 
-したがって本研究は、構造の見かけだけから立体障害や反応速度を決められないことと、各計算が検討できる範囲を示す結果として位置付けます。仮説11を進める場合は、まず切断後終点のFreq、その先のプロトン移動、必要な付加段階を確認し、Bz経路の定義を固めてから同条件のSBと比較する必要があります。これらは今後の課題であり、収録済みの結果ではありません。
+したがって本研究は、構造の見かけだけから立体障害や反応速度を決められないことと、各計算が検討できる範囲を示す結果として位置付けます。仮説11で計算したのは、仮定した非酵素的モデルの一部です。実際の代謝を説明するには、先に代謝経路や酵素に関する根拠を整理し、モデルが調べたい問いに合うか確認する必要があります。モデル反応として検討を続ける場合も、切断後終点のFreq、その先のプロトン移動、必要な付加段階、同条件のSBとの比較は、この公開資料では未完了です。
 
 ## 7. 主な用語
 
 | 用語 | この資料での意味 |
 | --- | --- |
-| 配座／ensemble | 結合の回転などで変わる分子の形／調べた複数構造の集合 |
+| 配座／ensemble（配座集合） | 結合の回転などで変わる分子の形／調べた複数構造の集合 |
 | Opt／Freq | 構造最適化／振動数計算 |
-| RMSD／cluster | 対応原子の位置のずれをまとめた尺度／閾値でまとめた構造群 |
-| TS／NEB-TS／IRC | 遷移状態／経路探索からTSへ進む方法／TSから両側へ反応経路を追う計算 |
+| RMSD／cluster（構造群） | 対応原子の位置のずれをまとめた尺度／閾値でまとめた構造群 |
+| TS／NEB-TS／IRC | 遷移状態／複数構造を並べて経路を探し、TSを最適化する方法／TSから両方向へ経路をたどる計算 |
 | CPCM／ALPB | 周囲の溶媒を連続的な媒体として近似する方法 |
 | 電子エネルギーとGibbs自由エネルギー | 異なる量。熱・エントロピー・標準状態等の扱いを確認し、混同しない |
+| N1／para位／TMS | N1は分子内の原子の位置を示す番号。paraはベンゼン環上で向かい合う位置。TMSはトリメチルシリル基の略称 |
+| MBIS／CHELPG電荷 | 原子ごとの電荷の偏りを、異なる分割法で数値にしたもの。方法によって値が変わる |
+| EDDB | 電子が複数の結合に広がる程度を調べる解析。反応障壁や反応速度そのものではない |
+
+ここでいう「仮説を支持する」は、その仮説のうち計算で調べた部分と結果が整合するという意味です。生体内でも同じ機構が働くことや、代謝速度が確定したことを意味しません。
