@@ -17,31 +17,31 @@
 
 | 配座 | ΔE / kJ mol⁻¹ | ΔG / kJ mol⁻¹ | Freq | 虚振動(<−20) | Opt由来 |
 | --- | ---: | ---: | --- | ---: | --- |
-| conf001 | 0.000 | 0.000 | 完了 | 0 | computed_original_配座集合_run |
-| conf004 | 0.850 | 1.132 | 完了 | 0 | computed_original_配座集合_run |
-| conf003 | 0.988 | 0.954 | 完了 | 0 | computed_original_配座集合_run |
-| conf008 | 4.785 | 5.682 | 完了 | 0 | computed_original_配座集合_run |
-| conf002 | 7.338 | — | 未実施 | null | computed_original_配座集合_run |
-| conf007 | 7.630 | — | 未実施 | null | computed_original_配座集合_run |
-| conf006 | 7.680 | — | 未実施 | null | computed_original_配座集合_run |
-| conf005 | 7.786 | — | 未実施 | null | computed_original_配座集合_run |
-| conf009 | 11.955 | — | 未実施 | null | computed_original_配座集合_run |
+| conf001 | 0.000 | 0.000 | 完了 | 0 | computed_original_ensemble_run |
+| conf004 | 0.850 | 1.132 | 完了 | 0 | computed_original_ensemble_run |
+| conf003 | 0.988 | 0.954 | 完了 | 0 | computed_original_ensemble_run |
+| conf008 | 4.785 | 5.682 | 完了 | 0 | computed_original_ensemble_run |
+| conf002 | 7.338 | — | 未実施 | null | computed_original_ensemble_run |
+| conf007 | 7.630 | — | 未実施 | null | computed_original_ensemble_run |
+| conf006 | 7.680 | — | 未実施 | null | computed_original_ensemble_run |
+| conf005 | 7.786 | — | 未実施 | null | computed_original_ensemble_run |
+| conf009 | 11.955 | — | 未実施 | null | computed_original_ensemble_run |
 
 ## SBの配座別結果
 
 | 配座 | ΔE / kJ mol⁻¹ | ΔG / kJ mol⁻¹ | Freq | 虚振動(<−20) | Opt由来 |
 | --- | ---: | ---: | --- | ---: | --- |
 | conf002 | 0.000 | 0.000 | 完了 | 0 | reused_external_read_only |
-| conf007 | 1.006 | 0.896 | 完了 | 0 | computed_original_配座集合_run |
-| conf005 | 1.015 | 1.156 | 完了 | 0 | computed_original_配座集合_run |
+| conf007 | 1.006 | 0.896 | 完了 | 0 | computed_original_ensemble_run |
+| conf005 | 1.015 | 1.156 | 完了 | 0 | computed_original_ensemble_run |
 | conf004 | 1.091 | 0.603 | 完了 | 0 | reused_external_read_only |
-| conf006 | 1.095 | 0.642 | 完了 | 0 | computed_original_配座集合_run |
+| conf006 | 1.095 | 0.642 | 完了 | 0 | computed_original_ensemble_run |
 | conf011_pool109 | 4.027 | — | 未実施 | null | computed_targeted_followup |
 | conf003 | 7.187 | 6.618 | 完了 | 0 | reused_external_read_only |
 | conf011 | 7.776 | — | 未実施 | null | computed_strict_selection_repair |
-| conf010 | 7.824 | — | 未実施 | null | computed_original_配座集合_run |
-| conf009 | 7.865 | — | 未実施 | null | computed_original_配座集合_run |
-| conf008 | 7.919 | — | 未実施 | null | computed_original_配座集合_run |
+| conf010 | 7.824 | — | 未実施 | null | computed_original_ensemble_run |
+| conf009 | 7.865 | — | 未実施 | null | computed_original_ensemble_run |
+| conf008 | 7.919 | — | 未実施 | null | computed_original_ensemble_run |
 
 ## Bz–SB共通骨格の相互最近傍
 

@@ -172,5 +172,14 @@
         "change": "日本語化・表現の推敲。専門用語・識別子・計算値・状態の区別を保持。"
       }
     ]
-  }
+  },
+  "corrections": [
+    {
+      "date": "2026-10-27",
+      "path": "research_results/comparison/PRELIMINARY_COMPARISON_JA.md",
+      "previous_published_sha256": "3932d6715881a36d90679753e1ef8eafec0670e3676ec5e244c7fb285cde306b",
+      "published_sha256": "bc1453dfcb1d74b7c56c4ea10509dac6f1c8dbf46652afc31d11e6d6b25e1dc7",
+      "change": "計算由来の識別子 computed_original_ensemble_run を原文どおりに復元。数値と計算結果は変更していない。"
+    }
+  ]
 }
